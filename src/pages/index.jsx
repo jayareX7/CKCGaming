@@ -28,12 +28,7 @@ const IndexPage = ({ data }) => {
             <HeroArea data={content["hero-section"]} />
             <WelcomeFeaturesArea data={content["welcome-section"]} />
             <WatchLiveStremingArea data={{ items: data.allMatch.nodes }} />
-            <PlayroomAd
-                data={{
-                    ...content["upcoming-match"],
-                    items: data.allMatch.nodes,
-                }}
-            />
+
             <FunfactArea data={content["funfact-section"]} />
             <PopulerGamesArea
                 data={{
