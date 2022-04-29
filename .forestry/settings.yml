@@ -13,9 +13,6 @@ sections:
   label: Footer Info
 - type: document
   path: src/data/general/footer.json
-  label: Contact Footer
-- type: document
-  path: src/data/general/footer.json
   label: Social Media Footer
 - type: heading
   label: Content
