@@ -21,3 +21,5 @@ fields:
         format: markdown
     label: description
   label: section_title
+pages:
+- src/data/homepages/home.json
