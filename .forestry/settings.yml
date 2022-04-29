@@ -12,6 +12,13 @@ sections:
 - type: heading
   label: Data
 - type: directory
+  path: src/data/games
+  label: Games
+  create: documents
+  match: "**/*"
+  templates:
+  - games
+- type: directory
   path: src/data/blog-post
   label: Test
   create: documents
