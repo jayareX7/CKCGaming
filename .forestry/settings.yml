@@ -12,7 +12,7 @@ sections:
 - type: heading
   label: Data
 - type: directory
-  path: data/blog-post
+  path: src/data/blog-post
   label: Test
   create: documents
   match: "**/*"
