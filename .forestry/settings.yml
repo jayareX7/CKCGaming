@@ -19,8 +19,10 @@ sections:
 - type: directory
   path: src/data/homepages
   label: Front Page (Home)
-  create: documents
+  create: none
   match: "**/*"
+  templates:
+  - front-page
 - type: directory
   path: src/data/games
   label: Games
