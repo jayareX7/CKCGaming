@@ -1,4 +1,37 @@
 ---
 label: Games
 hide_body: false
-fields: []
+fields:
+- name: id
+  type: text
+  config:
+    required: false
+  label: id
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: updated
+  type: datetime
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: updated
+- name: quoteText
+  type: text
+  config:
+    required: false
+  label: Quote
