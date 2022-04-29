@@ -108,7 +108,7 @@
     },
     {
       "id": "home-upcoming-match-section",
-      "section": "upcoming-match",
+      "section": "Upcoming Match",
       "section_title": {
         "showDescription": true,
         "align": "center",
