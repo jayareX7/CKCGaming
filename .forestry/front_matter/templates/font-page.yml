@@ -1,5 +1,5 @@
 ---
-label: Front Page
+label: Hero
 hide_body: false
 fields:
 - type: text
