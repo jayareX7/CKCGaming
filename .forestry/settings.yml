@@ -21,8 +21,6 @@ sections:
   label: Front Page (Home)
   create: none
   match: "**/*"
-  templates:
-  - front-page
 - type: directory
   path: src/data/games
   label: Games
