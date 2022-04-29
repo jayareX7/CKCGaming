@@ -51,3 +51,5 @@ fields:
     - type: text
       name: content
       label: content
+pages:
+- src/data/homepages/home.json
