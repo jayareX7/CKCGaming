@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: General Config
 - type: document
-  path: gatsby-config.js
+  path: package.json
   label: Site Info
 - type: heading
   label: Data
