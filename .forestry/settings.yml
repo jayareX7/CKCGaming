@@ -20,6 +20,11 @@ sections:
 - type: heading
   label: Content
 - type: directory
+  path: src/data/homepages
+  label: Front Page (Home)
+  create: documents
+  match: "**/*"
+- type: directory
   path: src/data/games
   label: Games
   create: documents
