@@ -20,7 +20,7 @@ sections:
   path: src/data/homepages
   label: Front Page (Home)
   create: none
-  match: "**/*"
+  match: "/home.json"
 - type: directory
   path: src/data/games
   label: Games
