@@ -27,7 +27,7 @@
     },
     {
       "id": "home-welcome-section",
-      "section": "welcome-section",
+      "section": "Welcome",
       "section_title": {
         "showDescription": false,
         "align": "center",
