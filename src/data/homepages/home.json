@@ -4,7 +4,7 @@
   "content": [
     {
       "id": "hero-section-content",
-      "section": "hero-section",
+      "section": "Hero",
       "headings": [
         {
           "level": "h1",

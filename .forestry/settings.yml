@@ -19,7 +19,6 @@ sections:
 - type: document
   path: src/data/homepages/home.json
   label: Home
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
