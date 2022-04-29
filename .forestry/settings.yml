@@ -4,6 +4,12 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: General Config
+- type: document
+  path: config.json
+  label: Site Info
+  match: "**/*"
 - type: directory
   path: data/blog-post
   label: Test
