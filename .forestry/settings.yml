@@ -9,6 +9,11 @@ sections:
 - type: document
   path: package.json
   label: Site Info
+- type: directory
+  path: src/data/general
+  label: Footer
+  create: documents
+  match: "**/*"
 - type: heading
   label: Data
 - type: directory

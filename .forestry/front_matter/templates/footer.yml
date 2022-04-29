@@ -1,4 +1,138 @@
 ---
 label: Footer
 hide_body: false
-fields: []
+fields:
+- name: id
+  type: text
+  config:
+    required: false
+  label: id
+- name: footer
+  type: field_group
+  config: {}
+  fields:
+  - name: footer-1
+    type: field_group
+    config: {}
+    fields:
+    - name: id
+      type: text
+      config:
+        required: false
+      label: id
+    - name: text
+      type: text
+      config:
+        required: false
+      label: text
+    - name: socials
+      type: field_group
+      config: {}
+      fields:
+      - name: id
+        type: text
+        config:
+          required: false
+        label: id
+      - name: icon
+        type: text
+        config:
+          required: false
+        label: icon
+      - name: link
+        type: text
+        config:
+          required: false
+        label: link
+      - name: title
+        type: text
+        config:
+          required: false
+        label: title
+      label: socials
+    label: footer-1
+  - name: footer-2
+    type: field_group
+    config: {}
+    fields:
+    - name: id
+      type: text
+      config:
+        required: false
+      label: id
+    - name: title
+      type: text
+      config:
+        required: false
+      label: title
+    - name: text
+      type: text
+      config:
+        required: false
+      label: text
+    label: footer-2
+  - name: footer-3
+    type: field_group
+    config: {}
+    fields:
+    - name: id
+      type: text
+      config:
+        required: false
+      label: id
+    - name: title
+      type: text
+      config:
+        required: false
+      label: title
+    - name: images
+      type: field_group
+      config: {}
+      fields:
+      - name: src
+        type: image_gallery
+        config: {}
+        label: src
+      - name: alt
+        type: text
+        config:
+          required: false
+        label: alt
+      label: images
+    label: footer-3
+  - name: footer-4
+    type: field_group
+    config: {}
+    fields:
+    - name: id
+      type: text
+      config:
+        required: false
+      label: id
+    - name: title
+      type: text
+      config:
+        required: false
+      label: title
+    - name: list
+      type: field_group
+      config: {}
+      fields:
+      - name: id
+        type: text
+        config:
+          required: false
+        label: id
+      - name: text
+        type: text
+        config:
+          required: false
+        label: text
+      - name: link
+        type: text
+        config:
+          required: false
+        label: link
+      label: list
+    label: footer-4
+  label: footer
