@@ -29,12 +29,9 @@ fields:
       name: countNumber
       label: countNumber
     - type: field_group_list
-      name: headings
+      name: Description
       label: headings
       fields:
-      - type: text
-        name: level
-        label: level
       - type: text
         name: content
         label: content
