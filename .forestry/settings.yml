@@ -63,9 +63,9 @@ sections:
   create: documents
   match: "**/*"
 upload_dir: uploads
-public_path: data/images
-front_matter_path: ''
-use_front_matter_path: false
+public_path: src/data/images
+front_matter_path: src/data/images
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_output_directory: public
