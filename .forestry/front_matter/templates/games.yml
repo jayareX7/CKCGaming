@@ -12,6 +12,33 @@ fields:
   config:
     required: false
   label: title
+- name: gameThum
+  type: field_group
+  config: {}
+  fields:
+  - name: src
+    type: file
+    config:
+      maxSize: 64
+    label: src
+  - name: alt
+    type: text
+    config:
+      required: false
+    label: alt
+  label: Thumbnail
+- name: categories
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: categories
 - name: date
   type: datetime
   label: date
@@ -35,3 +62,60 @@ fields:
   config:
     required: false
   label: Quote
+- name: isFeatured
+  type: boolean
+  label: Featured
+- name: images
+  type: field_group
+  config: {}
+  fields:
+  - name: src
+    type: file
+    config:
+      maxSize: 64
+    label: src
+  - name: alt
+    type: text
+    config:
+      required: false
+    label: alt
+  label: images
+- name: buttons
+  type: field_group
+  config: {}
+  fields:
+  - name: content
+    type: text
+    config:
+      required: false
+    label: content
+  label: buttons
+- name: content
+  type: field_group
+  config: {}
+  fields:
+  - name: id
+    type: text
+    config:
+      required: false
+    label: id
+  - name: items
+    type: field_group
+    config: {}
+    fields:
+    - name: id
+      type: text
+      config:
+        required: false
+      label: id
+    - name: desc
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: desc
+    label: items
+  label: content

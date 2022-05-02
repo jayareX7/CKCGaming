@@ -50,8 +50,6 @@ sections:
   label: Contact Test
   create: none
   match: contact-us-page.json
-  templates:
-  - contact-test
 - type: heading
   label: Content
 - type: directory
@@ -74,8 +72,8 @@ sections:
   create: documents
   match: "**/*"
 upload_dir: uploads
-public_path: src/data/images
-front_matter_path: src/data/images
+public_path: "../../data/images"
+front_matter_path: "../../data/images"
 use_front_matter_path: true
 file_template: ":filename:"
 build:
