@@ -25,8 +25,20 @@ sections:
 - type: heading
   label: Pages
 - type: document
-  path: src/data/inner-pages/about-us-page-json
+  path: src/data/inner-pages/about-us-page.json
   label: About Us
+  match: "**/*"
+- type: document
+  path: src/data/inner-pages/matchpage.json
+  label: Upcoming Matches
+  match: "**/*"
+- type: document
+  path: src/data/inner-pages/faq.json
+  label: FAQ's
+  match: "**/*"
+- type: document
+  path: src/data/inner-pages/contact-us-page.json
+  label: Contact
   match: "**/*"
 - type: directory
   path: src/data/inner-pages
