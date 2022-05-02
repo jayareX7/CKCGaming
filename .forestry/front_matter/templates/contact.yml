@@ -5,9 +5,6 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: pageType
-  label: pageType
 - type: field_group_list
   name: content
   label: content
@@ -55,3 +52,11 @@ fields:
       - type: text
         name: link
         label: link
+- name: test
+  type: blocks
+  label: test
+  template_types:
+  - pages
+  config:
+    min: 
+    max: 
