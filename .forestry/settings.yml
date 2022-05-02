@@ -29,6 +29,16 @@ sections:
 - type: document
   path: src/data/inner-pages/about-us-page.json
   label: About Us
+- type: directory
+  path: src/data/inner-pages
+  label: About Us Test
+  create: none
+  match: about-us-page.json
+- type: directory
+  path: src/data/inner-pages
+  label: Fun Facts Test
+  create: none
+  match: matchpage.json
 - type: document
   path: src/data/inner-pages/matchpage.json
   label: Fun Facts
@@ -42,6 +52,11 @@ sections:
 - type: document
   path: src/data/inner-pages/contact-us-page.json
   label: Contact
+- type: directory
+  path: src/data/inner-pages
+  label: Contact Test
+  create: none
+  match: contact-us-page.json
 - type: heading
   label: Content
 - type: directory
