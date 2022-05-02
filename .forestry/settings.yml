@@ -7,6 +7,10 @@ sections:
 - type: heading
   label: General Config
 - type: document
+  path: src/data/general/menu.json
+  label: Menu Links
+  match: "**/*"
+- type: document
   path: package.json
   label: Site Info
 - type: heading
