@@ -19,9 +19,6 @@ sections:
   label: Site Info
 - type: heading
   label: Footer Info
-- type: document
-  path: src/data/general/footer.json
-  label: Social Media Footer
 - type: heading
   label: Front Page (Home)
 - type: document
