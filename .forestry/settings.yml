@@ -25,7 +25,7 @@ sections:
 - type: heading
   label: Content
 - type: directory
-  path: src/data/innerpages
+  path: src/data/inner-pages
   label: Pages
   create: documents
   match: "**/*"
