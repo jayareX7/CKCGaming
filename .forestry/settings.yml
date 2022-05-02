@@ -27,11 +27,6 @@ sections:
 - type: document
   path: src/data/inner-pages/about-us-page.json
   label: About Us
-- type: directory
-  path: src/data/matchs
-  label: Upcoming
-  create: documents
-  match: "**/*"
 - type: document
   path: src/data/inner-pages/matchpage.json
   label: Fun Facts
@@ -41,11 +36,6 @@ sections:
 - type: document
   path: src/data/inner-pages/contact-us-page.json
   label: Contact
-- type: directory
-  path: src/data/inner-pages
-  label: Pages
-  create: documents
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
@@ -62,6 +52,11 @@ sections:
   match: "**/*"
   templates:
   - games
+- type: directory
+  path: src/data/matchs
+  label: Upcoming
+  create: documents
+  match: "**/*"
 upload_dir: uploads
 public_path: src/data/images/**/*
 front_matter_path: ''
