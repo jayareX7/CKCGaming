@@ -33,7 +33,7 @@ sections:
   match: about-us-page.json
 - type: directory
   path: src/data/inner-pages
-  label: Fun Facts Test
+  label: Fun Facts
   create: none
   match: matchpage.json
   templates:
