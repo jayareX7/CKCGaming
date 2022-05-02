@@ -48,6 +48,8 @@ sections:
   label: Contact Test
   create: none
   match: contact-us-page.json
+  templates:
+  - contact-test
 - type: heading
   label: Content
 - type: directory
