@@ -36,6 +36,8 @@ sections:
   label: Fun Facts Test
   create: none
   match: matchpage.json
+  templates:
+  - fun-facts
 - type: directory
   path: src/data/inner-pages
   label: FAQ's

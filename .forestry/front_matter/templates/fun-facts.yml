@@ -5,31 +5,19 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: pageType
-  label: pageType
 - type: field_group_list
   name: content
   label: content
   fields:
-  - type: text
-    name: id
-    label: id
-  - type: text
-    name: section
-    label: section
   - type: field_group_list
     name: items
     label: items
     fields:
-    - type: text
-      name: id
-      label: id
     - type: number
       name: countNumber
       label: countNumber
     - type: field_group_list
-      name: Description
+      name: headings
       label: headings
       fields:
       - type: text
