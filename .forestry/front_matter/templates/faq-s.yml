@@ -1,28 +1,4 @@
 ---
 label: FAQ's
-hide_body: true
-fields:
-- type: text
-  name: title
-  label: title
-- type: field_group_list
-  name: content
-  label: content
-  fields:
-  - type: field_group_list
-    name: items
-    label: items
-    fields:
-    - type: text
-      name: id
-      label: id
-    - type: field_group_list
-      name: Question
-      label: headings
-      fields:
-      - type: text
-        name: content
-        label: content
-    - type: textarea
-      name: description
-      label: description
+hide_body: false
+fields: []
