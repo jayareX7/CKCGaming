@@ -5,9 +5,6 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: pageType
-  label: pageType
 - type: field_group_list
   name: content
   label: content
@@ -20,21 +17,18 @@ fields:
     label: section
   - type: field_group_list
     name: items
-    label: items
+    label: Questions & Answers
     fields:
     - type: text
       name: id
       label: id
     - type: field_group_list
       name: headings
-      label: headings
+      label: Questions
       fields:
       - type: text
-        name: level
-        label: level
-      - type: text
         name: content
-        label: content
+        label: Question
     - type: textarea
       name: description
-      label: description
+      label: Answer
