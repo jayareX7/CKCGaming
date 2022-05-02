@@ -35,6 +35,13 @@ sections:
 - type: document
   path: src/data/inner-pages/faq.json
   label: FAQ's
+- type: directory
+  path: src/data/inner-pages/faq.json
+  label: FAQ TEst
+  create: all
+  match: "**/*"
+  templates:
+  - faq-s
 - type: document
   path: src/data/inner-pages/contact-us-page.json
   label: Contact
