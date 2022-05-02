@@ -40,5 +40,3 @@ fields:
       label: Answer
     label: Questions & Answers
   label: FAQ List
-pages:
-- src/data/inner-pages/faq.json
