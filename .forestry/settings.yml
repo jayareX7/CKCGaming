@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: directory
+  path: src/data/general
+  label: Test
+  create: none
+  match: "**/*"
 - type: heading
   label: General Config
 - type: document
@@ -58,7 +63,7 @@ sections:
   create: documents
   match: "**/*"
 upload_dir: uploads
-public_path: src/data/images/**/*
+public_path: data/images
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
