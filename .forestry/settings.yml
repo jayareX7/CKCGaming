@@ -37,8 +37,6 @@ sections:
   label: FAQ TEst
   create: all
   match: faq.json
-  templates:
-  - faq-s
 - type: document
   path: src/data/inner-pages/contact-us-page.json
   label: Contact
