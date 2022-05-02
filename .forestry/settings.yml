@@ -34,7 +34,7 @@ sections:
   label: Fun Facts
 - type: directory
   path: src/data/inner-pages
-  label: FAQ TEst
+  label: FAQ's
   create: all
   match: faq.json
   templates:

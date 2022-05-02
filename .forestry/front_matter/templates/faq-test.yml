@@ -1,20 +1,14 @@
 ---
-label: FAQ Test
-hide_body: true
+label: FAQ's
+hide_body: false
 fields:
 - type: text
   name: title
   label: title
 - type: field_group_list
   name: content
-  label: content
+  label: Frequently Asked Questions
   fields:
-  - type: text
-    name: id
-    label: id
-  - type: text
-    name: section
-    label: section
   - type: field_group_list
     name: items
     label: Questions & Answers
@@ -32,3 +26,4 @@ fields:
     - type: textarea
       name: description
       label: Answer
+  description: A list of heavily repetitive questions.
