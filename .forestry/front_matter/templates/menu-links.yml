@@ -1,7 +1,7 @@
 ---
 label: Menu Links
 hide_body: false
-display_field: section
+display_field: id
 fields:
 - type: text
   name: id
