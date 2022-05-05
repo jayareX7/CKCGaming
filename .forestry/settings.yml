@@ -13,9 +13,11 @@ sections:
   label: General Config
 - type: directory
   path: src/data/general
-  label: Links
+  label: Menu Links
   create: none
   match: menu.json
+  templates:
+  - menu-links
 - type: document
   path: package.json
   label: Site Info
