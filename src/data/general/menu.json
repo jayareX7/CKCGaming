@@ -3,17 +3,17 @@
   "section": "menu",
   "menu": [
     {
-      "id": "Home",
+      "id": "home",
       "text": "Home",
       "link": "/"
     },
     {
-      "id": "About-Us",
+      "id": "about-us",
       "text": "About Us",
       "link": "/about-us"
     },
     {
-      "id": "Gamerz-Hideout",
+      "id": "gamerz-hideout",
       "text": "Gamerz Hideout",
       "link": "/gamerz-hideout",
       "submenu": [
@@ -35,12 +35,12 @@
       ]
     },
     {
-      "id": "Playroom",
+      "id": "playroom",
       "text": "Playroom",
       "link": "/playroom"
     },
     {
-      "id": "Contact",
+      "id": "contact",
       "text": "Contact",
       "link": "/contact-us",
       "submenu": [
