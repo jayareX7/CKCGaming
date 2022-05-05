@@ -93,28 +93,28 @@ module.exports = {
                     },
                 ],
             },
-            backgroundImage: {
-                "nav-shape": `url(${path.resolve(
-                    __dirname,
-                    "./src/data/images/others/menu_shape.webp"
-                )})`,
-                "arrow-shape": `url(${path.resolve(
-                    __dirname,
-                    "./src/data/images/icons/navigation-bg1.webp"
-                )})`,
-                "arrow-hover-shape": `url(${path.resolve(
-                    __dirname,
-                    "./src/data/images/icons/navigation-bg2.webp"
-                )})`,
-                "social-shape": `url(${path.resolve(
-                    __dirname,
-                    "./src/data/images/icons/navigation-bg3.webp"
-                )})`,
-                "social-hover-shape": `url(${path.resolve(
-                    __dirname,
-                    "./src/data/images/icons/navigation-bg4.webp"
-                )})`,
-            },
+            // backgroundImage: {
+            //     "nav-shape": `url(${path.resolve(
+            //         __dirname,
+            //         "./src/data/images/others/menu_shape.webp"
+            //     )})`,
+            //     "arrow-shape": `url(${path.resolve(
+            //         __dirname,
+            //         "./src/data/images/icons/navigation-bg1.webp"
+            //     )})`,
+            //     "arrow-hover-shape": `url(${path.resolve(
+            //         __dirname,
+            //         "./src/data/images/icons/navigation-bg2.webp"
+            //     )})`,
+            //     "social-shape": `url(${path.resolve(
+            //         __dirname,
+            //         "./src/data/images/icons/navigation-bg3.webp"
+            //     )})`,
+            //     "social-hover-shape": `url(${path.resolve(
+            //         __dirname,
+            //         "./src/data/images/icons/navigation-bg4.webp"
+            //     )})`,
+            // },
             spacing: {
                 px: "1px",
                 20: "20px",
