@@ -5,13 +5,10 @@ display_field: section
 fields:
 - type: text
   name: id
-  label: Menu
-- type: text
-  name: section
-  label: section
+  label: Menu Links
 - type: field_group_list
   name: menu
-  label: menu
+  label: Links
   fields:
   - type: text
     name: id
