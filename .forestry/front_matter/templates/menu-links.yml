@@ -3,9 +3,6 @@ label: Menu Links
 hide_body: false
 display_field: id
 fields:
-- type: text
-  name: id
-  label: Menu Links
 - type: field_group_list
   name: menu
   label: Links
