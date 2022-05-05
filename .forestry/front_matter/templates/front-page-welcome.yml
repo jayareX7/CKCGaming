@@ -1,0 +1,23 @@
+---
+label: Front Page (Welcome)
+hide_body: false
+fields:
+- name: section_title
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: heading
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: description
+  label: section_title

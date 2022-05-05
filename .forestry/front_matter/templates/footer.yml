@@ -1,0 +1,54 @@
+---
+label: Footer
+hide_body: false
+fields:
+- name: id
+  type: text
+  config:
+    required: false
+  label: id
+- name: footer
+  type: field_group
+  config: {}
+  fields:
+  - name: footer-1
+    type: field_group
+    config: {}
+    fields:
+    - name: socials
+      type: field_group
+      config: {}
+      fields:
+      - name: id
+        type: text
+        config:
+          required: false
+        label: id
+      - name: icon
+        type: text
+        config:
+          required: false
+        label: icon
+      - name: link
+        type: text
+        config:
+          required: false
+        label: link
+      - name: title
+        type: text
+        config:
+          required: false
+        label: title
+      label: socials
+    - name: id
+      type: text
+      config:
+        required: false
+      label: id
+    - name: text
+      type: text
+      config:
+        required: false
+      label: text
+    label: footer-1
+  label: footer

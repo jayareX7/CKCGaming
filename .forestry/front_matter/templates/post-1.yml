@@ -1,0 +1,59 @@
+---
+label: Post
+hide_body: false
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: date
+  type: datetime
+  label: date
+  description: Date post was created
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: image
+  type: field_group
+  config: {}
+  fields:
+  - name: src
+    type: file
+    config:
+      maxSize: 64
+    label: src
+  - name: alt
+    type: text
+    config:
+      required: false
+    label: alt
+  label: image
+- name: quote_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: quote_text
+- name: categories
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: categories
+- name: tags
+  type: tag_list
+  default: []
+  label: tags

@@ -1,0 +1,34 @@
+---
+label: Contact Footer
+hide_body: false
+fields:
+- name: id
+  type: text
+  config:
+    required: false
+  label: id
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: contact_info
+  type: field_group
+  config: {}
+  fields:
+  - name: id
+    type: text
+    config:
+      required: false
+    label: id
+  - name: title
+    type: text
+    config:
+      required: false
+    label: title
+  - name: text
+    type: text
+    config:
+      required: false
+    label: text
+  label: contact_info

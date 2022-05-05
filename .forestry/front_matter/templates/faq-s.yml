@@ -1,0 +1,42 @@
+---
+label: Test
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: content
+  type: field_group
+  config: {}
+  fields:
+  - name: items
+    type: field_group
+    config: {}
+    fields:
+    - name: headings
+      type: field_group
+      config: {}
+      fields:
+      - name: content
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+          schema:
+            format: markdown
+        label: Question
+      label: Questions
+    - name: descriptions
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Answer
+    label: Questions & Answers
+  label: FAQ List

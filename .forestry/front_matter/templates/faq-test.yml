@@ -1,0 +1,29 @@
+---
+label: FAQ's
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group_list
+  name: content
+  label: Frequently Asked Questions
+  fields:
+  - type: field_group_list
+    name: items
+    label: Questions & Answers
+    fields:
+    - type: text
+      name: id
+      label: id
+    - type: field_group_list
+      name: headings
+      label: Questions
+      fields:
+      - type: text
+        name: content
+        label: Question
+    - type: textarea
+      name: description
+      label: Answer
+  description: A list of heavily repetitive questions.
