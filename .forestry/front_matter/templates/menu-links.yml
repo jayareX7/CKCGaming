@@ -5,7 +5,7 @@ display_field: section
 fields:
 - type: text
   name: id
-  label: id
+  label: Menu
 - type: text
   name: section
   label: section
