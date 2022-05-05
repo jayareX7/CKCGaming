@@ -17,14 +17,16 @@ module.exports = {
                     70: "#000934",
                     80: "#423A5F",
                     90: "#0b2c91",
-                    100: "#06133b",
+                    100: "#FFFFFF",
+                    120: "#F67241",
+                    150: "#CB5327",
                 },
                 yollow: {
                     DEFAULT: "#ffa700",
                     80: "#ffb300",
                     90: "#e77e00",
                 },
-                body: "#f3f3f3",
+                body: "blue",
                 green: "#33cb33",
                 gray: {
                     100: "#f7fafc",

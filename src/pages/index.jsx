@@ -13,6 +13,7 @@ import { graphql } from "gatsby";
 import { normalizedData } from "@utils/functions";
 import FunfactArea from "../container/home/funfact";
 import PlayroomAd from "../components/playroom-ad";
+import OurTeamsArea from "../container/about-us/our-teams";
 
 const IndexPage = ({ data }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -26,7 +27,8 @@ const IndexPage = ({ data }) => {
         >
             <SEO title="Home" pathname="/" />
             <HeroArea data={content["hero-section"]} />
-            <WelcomeFeaturesArea data={content["welcome-section"]} />
+            <OurTeamsArea data={content["our-team-section"]} />
+
             <WatchLiveStremingArea data={{ items: data.allMatch.nodes }} />
 
             <FunfactArea data={content["funfact-section"]} />
@@ -86,6 +88,7 @@ export const query = graphql`
                 ...PageContentAll
             }
         }
+
         allMatch(sort: { order: DESC, fields: date }, limit: 3) {
             nodes {
                 ...Matchs

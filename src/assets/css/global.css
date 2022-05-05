@@ -13,7 +13,7 @@
         @apply font-exo;
     }
     .wrapper {
-        @apply text-white;
+        @apply text-secondary-120;
     }
     select {
         @apply text-black;

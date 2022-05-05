@@ -38,7 +38,7 @@ const Footer = ({ data }) => {
 
                 <div className="footer-bottom bg-secondary-70">
                     <div className="container">
-                        <div className=" flex flex-col md:flex-row md:justify-between items-center py-6">
+                        <div className=" flex flex-col md:flex-row md:justify-between text-white items-center py-6">
                             <div className="">
                                 &copy; {new Date().getFullYear()} CKC MADE WITH{" "}
                                 <i className="icofont-heart"></i> BY
