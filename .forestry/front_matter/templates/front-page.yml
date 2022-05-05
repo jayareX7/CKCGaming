@@ -1,0 +1,39 @@
+---
+label: Front Page
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: content
+  type: field_group
+  config: {}
+  fields:
+  - name: id
+    type: text
+    config:
+      required: false
+    label: id
+  - name: section
+    type: text
+    config:
+      required: false
+    label: section
+  - name: headings
+    type: field_group
+    config: {}
+    fields:
+    - name: level
+      type: text
+      config:
+        required: false
+      label: level
+    - name: content
+      type: text
+      config:
+        required: false
+      label: content
+    label: headings
+  label: content

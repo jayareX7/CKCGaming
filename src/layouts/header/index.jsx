@@ -39,11 +39,11 @@ const Header = ({ data }) => {
                         <MainMenu allmenuData={data?.menu} />
                         <div className="header-right-action flex items-center">
                             <Button
-                                path="/add-ons"
+                                path="/"
                                 shape="square2xl"
                                 className="text-white hidden xs:block"
                             >
-                                PACKAGES
+                                SIGN UP
                                 <StaticImage
                                     className="align-middle ml-3"
                                     src="../../data/images/icons/arrrow-icon2.webp"

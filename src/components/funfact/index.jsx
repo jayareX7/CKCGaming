@@ -13,7 +13,7 @@ const FunfactItem = ({ title, countNumber }) => {
     };
 
     return (
-        <div className="single_counterup text-body text-center">
+        <div className="single_counterup text-white text-center">
             <div className="counterup_text mt-4">
                 <CountUp
                     start={focus ? 0 : null}
