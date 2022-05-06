@@ -26,6 +26,8 @@ sections:
   label: 'Home '
   create: none
   match: home.json
+  templates:
+  - front-page
 - type: heading
   label: Pages
 - type: directory
