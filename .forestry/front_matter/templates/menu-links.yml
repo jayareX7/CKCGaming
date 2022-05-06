@@ -1,0 +1,20 @@
+---
+label: Menu Links
+hide_body: false
+display_field: id
+fields:
+- type: field_group_list
+  name: menu
+  label: Links
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: text
+    name: text
+    label: text
+  - type: text
+    name: link
+    label: link
+pages:
+- src/data/general/menu.json
