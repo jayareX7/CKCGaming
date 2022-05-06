@@ -10,7 +10,7 @@ fields:
   label: section
 - type: field_group_list
   name: footer
-  label: Social Media
+  label: Footers
   fields:
   - type: text
     name: id
@@ -34,28 +34,15 @@ fields:
     - type: text
       name: title
       label: title
-- name: footer-2
-  type: field_group_list
-  fields:
-  - name: id
-    type: text
-    config:
-      required: false
-    label: id
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: contact_info
+  - name: footer-2
     type: field_group_list
     fields:
-    - name: title
+    - name: id
       type: text
       config:
         required: false
-      label: Type
-    - name: text
+      label: id
+    - name: title
       type: textarea
       default: ''
       config:
@@ -63,17 +50,34 @@ fields:
         wysiwyg: false
         schema:
           format: markdown
-      label: text
+      label: Title
+    - name: contact_info
+      type: field_group_list
+      fields:
+      - name: title
+        type: text
+        config:
+          required: false
+        label: Type
+      - name: text
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+          schema:
+            format: markdown
+        label: text
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: Contact Info
     config:
       min: 
       max: 
       labelField: 
-    label: Contact Info
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Contact Info
+    label: Footer 2
 - name: footer-3
   type: field_group_list
   fields:
