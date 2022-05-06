@@ -14,8 +14,6 @@ sections:
   label: Footer Links
   create: none
   match: footer.json
-  templates:
-  - footer
 - type: document
   path: package.json
   label: Site Info
