@@ -28,14 +28,16 @@ sections:
   match: home.json
   templates:
   - front-page
-- type: document
-  path: src/data/homepages/home-welcome-section.json
+- type: directory
+  path: src/data/homepages
   label: Welcome Section
-  match: "**/*"
-- type: document
-  path: src/data/homepages/home-fun-facts.json
+  create: none
+  match: home-welcome-section.json
+- type: directory
+  path: src/data/homepages
   label: Fun Facts
-  match: "**/*"
+  create: none
+  match: fun-facts.json
 - type: heading
   label: Pages
 - type: directory
