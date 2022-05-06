@@ -17,7 +17,13 @@ import OurTeamsArea from "../container/about-us/our-teams";
 
 const IndexPage = ({ data }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
-    const content = normalizedData(data?.page?.content || []);
+    const homeContent = normalizedData(data?.pages1?.content || []);
+    const welcomeContent = normalizedData(data?.pages2?.content || []);
+    const funContent = normalizedData(data?.pages3?.content || []);
+    const gameContent = normalizedData(data?.pages5?.content || []);
+    const testimonialContent = normalizedData(data?.pages6?.content || []);
+    const latestContent = normalizedData(data?.pages7?.content || []);
+
     return (
         <Layout
             data={{
@@ -26,22 +32,21 @@ const IndexPage = ({ data }) => {
             }}
         >
             <SEO title="Home" pathname="/" />
-            <HeroArea data={content["hero-section"]} />
-            <OurTeamsArea data={content["our-team-section"]} />
+            <HeroArea data={homeContent["hero-section"]} />
 
+            <WelcomeFeaturesArea data={welcomeContent["welcome-section"]} />
             <WatchLiveStremingArea data={{ items: data.allMatch.nodes }} />
-
-            <FunfactArea data={content["funfact-section"]} />
+            <FunfactArea data={funContent["funfact-section"]} />
             <PopulerGamesArea
                 data={{
-                    ...content["populer-games-section"],
+                    ...gameContent["populer-games-section"],
                     items: data.allGames.nodes,
                 }}
             />
-            <TestimonialArea data={content["testimonial-section"]} />
+            <TestimonialArea data={testimonialContent["testimonial-section"]} />
             <LatestBlogArea
                 data={{
-                    ...content["latest-section"],
+                    ...latestContent["latest-section"],
                     items: data.latestPosts.nodes,
                 }}
             />
@@ -83,12 +88,51 @@ export const query = graphql`
                 }
             }
         }
-        page(title: { eq: "home" }, pageType: { eq: homepage }) {
+        pages1: page(title: { eq: "home" }, pageType: { eq: homepage }) {
             content {
                 ...PageContentAll
             }
         }
-
+        pages2: page(
+            title: { eq: "home-welcome-section" }
+            pageType: { eq: homepage }
+        ) {
+            content {
+                ...PageContentAll
+            }
+        }
+        pages3: page(
+            title: { eq: "home-fun-facts" }
+            pageType: { eq: homepage }
+        ) {
+            content {
+                ...PageContentAll
+            }
+        }
+        pages5: page(
+            title: { eq: "home-popular-games" }
+            pageType: { eq: homepage }
+        ) {
+            content {
+                ...PageContentAll
+            }
+        }
+        pages6: page(
+            title: { eq: "home-testimonials" }
+            pageType: { eq: homepage }
+        ) {
+            content {
+                ...PageContentAll
+            }
+        }
+        pages7: page(
+            title: { eq: "home-latest-news" }
+            pageType: { eq: homepage }
+        ) {
+            content {
+                ...PageContentAll
+            }
+        }
         allMatch(sort: { order: DESC, fields: date }, limit: 3) {
             nodes {
                 ...Matchs

@@ -1,0 +1,16 @@
+{
+    "title": "home-popular-games",
+    "pageType": "homepage",
+    "content": [
+        {
+            "id": "home-populer-games-section",
+            "section": "populer-games-section",
+            "section_title": {
+                "showDescription": true,
+                "align": "center",
+                "heading": "POPULAR GAME",
+                "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
+            }
+        }
+    ]
+}
