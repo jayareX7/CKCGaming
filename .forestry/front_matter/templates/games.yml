@@ -71,8 +71,7 @@ fields:
       required: false
     label: section
   - name: items
-    type: field_group
-    config: {}
+    type: field_group_list
     fields:
     - name: id
       type: text
@@ -88,6 +87,10 @@ fields:
         schema:
           format: markdown
       label: desc
+    config:
+      min: 
+      max: 
+      labelField: 
     label: Items
   config:
     min: 
