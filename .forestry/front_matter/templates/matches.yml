@@ -1,0 +1,94 @@
+---
+label: Matches
+hide_body: true
+fields:
+- type: text
+  name: id
+  label: id
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: teams
+  label: teams
+- type: text
+  name: registeredTeams
+  label: registeredTeams
+- type: text
+  name: playerNumber
+  label: playerNumber
+- type: text
+  name: teamNubmber
+  label: teamNubmber
+- type: text
+  name: winningPrize
+  label: winningPrize
+- type: boolean
+  name: is_featured
+  label: is_featured
+- type: textarea
+  name: quoteText
+  label: quoteText
+- type: field_group
+  name: liveStreaming
+  label: liveStreaming
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: field_group_list
+    name: headings
+    label: headings
+    fields:
+    - type: text
+      name: level
+      label: level
+    - type: text
+      name: content
+      label: content
+  - type: field_group_list
+    name: images
+    label: images
+    fields:
+    - type: file
+      name: src
+      label: src
+    - type: text
+      name: alt
+      label: alt
+  - type: text
+    name: link
+    label: link
+- type: field_group_list
+  name: images
+  label: images
+  fields:
+  - type: file
+    name: src
+    label: src
+  - type: text
+    name: alt
+    label: alt
+- type: field_group_list
+  name: content
+  label: content
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: text
+    name: section
+    label: section
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: text
+      name: id
+      label: id
+    - type: textarea
+      name: desc
+      label: desc
