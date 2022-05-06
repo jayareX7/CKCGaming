@@ -112,10 +112,10 @@ sections:
   match: "**/*"
   templates:
   - matches
-upload_dir: uploads
-public_path: data/images
+upload_dir: src/data/images
+public_path: ''
 front_matter_path: data/images
-use_front_matter_path: true
+use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: public
