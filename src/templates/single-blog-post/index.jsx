@@ -192,7 +192,32 @@ export const postQuery = graphql`
                     ...Menu
                 }
                 footer {
-                    ...Footer
+                    contact_info {
+                        text
+                        title
+                        id
+                        icon
+                    }
+                    socials {
+                        link
+                        title
+                        icon
+                        id
+                    }
+                    list {
+                        id
+                        link
+                        text
+                    }
+                    images {
+                        alt
+                        src {
+                            childImageSharp {
+                                gatsbyImageData
+                            }
+                        }
+                    }
+                    id
                 }
             }
         }
