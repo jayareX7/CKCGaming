@@ -83,26 +83,9 @@ fields:
     label: Content
   label: Buttons
 - name: content
-  type: field_group
-  config: {}
-  fields:
-  - name: items
-    type: field_group
-    config: {}
-    fields:
-    - name: title
-      type: text
-      config:
-        required: false
-      label: Title
-    - name: desc
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
-        schema:
-          format: markdown
-      label: Description
-    label: Items
+  type: blocks
   label: Content
+  template_types: []
+  config:
+    min: 
+    max: 
