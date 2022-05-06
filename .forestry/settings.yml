@@ -51,13 +51,6 @@ sections:
   - front-page-game-section
 - type: directory
   path: src/data/homepages
-  label: Testimonials
-  create: none
-  match: home-testimonials.json
-  templates:
-  - front-page-testimonial-section
-- type: directory
-  path: src/data/homepages
   label: Latest News
   create: none
   match: home-latest-news.json
@@ -112,6 +105,13 @@ sections:
   match: "**/*"
   templates:
   - matches
+- type: directory
+  path: src/data/homepages
+  label: Testimonials
+  create: none
+  match: home-testimonials.json
+  templates:
+  - front-page-testimonial-section
 upload_dir: src/data/images
 public_path: ''
 front_matter_path: data/images
