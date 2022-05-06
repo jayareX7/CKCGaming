@@ -71,9 +71,8 @@ sections:
       label: Upcoming
       create: documents
       match: "**/*"
-upload_dir: uploads
-public_path: data/images
-front_matter_path: data/images
+upload_dir: src/data/images
+public_path:
 use_front_matter_path: true
 file_template: ":filename:"
 build:
