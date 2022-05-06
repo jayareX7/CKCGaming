@@ -1,39 +1,53 @@
 ---
-label: Front Page
-hide_body: false
+label: Front-Page
+hide_body: true
 fields:
-- name: title
-  type: text
-  config:
-    required: false
+- type: text
+  name: title
   label: title
-- name: content
-  type: field_group
-  config: {}
-  fields:
-  - name: id
-    type: text
-    config:
-      required: false
-    label: id
-  - name: section
-    type: text
-    config:
-      required: false
-    label: section
-  - name: headings
-    type: field_group
-    config: {}
-    fields:
-    - name: level
-      type: text
-      config:
-        required: false
-      label: level
-    - name: content
-      type: text
-      config:
-        required: false
-      label: content
-    label: headings
+- type: text
+  name: pageType
+  label: pageType
+- type: field_group_list
+  name: content
   label: content
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: text
+    name: section
+    label: section
+  - type: field_group_list
+    name: headings
+    label: headings
+    fields:
+    - type: text
+      name: level
+      label: level
+    - type: text
+      name: content
+      label: content
+  - type: field_group_list
+    name: texts
+    label: texts
+    fields:
+    - type: text
+      name: content
+      label: content
+  - type: field_group_list
+    name: buttons
+    label: buttons
+    fields:
+    - type: number
+      name: id
+      label: id
+    - type: text
+      name: size
+      label: size
+    - type: text
+      name: path
+      label: path
+    - type: text
+      name: content
+      label: content
