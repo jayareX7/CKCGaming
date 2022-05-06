@@ -1,4 +1,38 @@
 ---
 label: Game Details
 hide_body: false
-fields: []
+fields:
+- name: content
+  type: field_group
+  config: {}
+  fields:
+  - name: id
+    type: text
+    config:
+      required: false
+    label: id
+  - name: section
+    type: text
+    config:
+      required: false
+    label: section
+  label: Content
+- name: items
+  type: field_group
+  config: {}
+  fields:
+  - name: id
+    type: text
+    config:
+      required: false
+    label: id
+  - name: desc
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: desc
+  label: items
