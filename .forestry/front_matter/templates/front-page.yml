@@ -1,0 +1,53 @@
+---
+label: Front-Page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: pageType
+  label: pageType
+- type: field_group_list
+  name: content
+  label: content
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: text
+    name: section
+    label: section
+  - type: field_group_list
+    name: headings
+    label: headings
+    fields:
+    - type: text
+      name: level
+      label: level
+    - type: text
+      name: content
+      label: content
+  - type: field_group_list
+    name: texts
+    label: texts
+    fields:
+    - type: text
+      name: content
+      label: content
+  - type: field_group_list
+    name: buttons
+    label: buttons
+    fields:
+    - type: number
+      name: id
+      label: id
+    - type: text
+      name: size
+      label: size
+    - type: text
+      name: path
+      label: path
+    - type: text
+      name: content
+      label: content
