@@ -35,3 +35,11 @@ fields:
     schema:
       format: markdown
   label: Quote
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
