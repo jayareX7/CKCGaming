@@ -1,0 +1,36 @@
+---
+label: Front-Page (latest-news-section)
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: pageType
+  label: pageType
+- type: field_group_list
+  name: content
+  label: content
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: text
+    name: section
+    label: section
+  - type: field_group
+    name: section_title
+    label: section_title
+    fields:
+    - type: boolean
+      name: showDescription
+      label: showDescription
+    - type: text
+      name: align
+      label: align
+    - type: text
+      name: heading
+      label: heading
+    - type: textarea
+      name: description
+      label: description
