@@ -40,21 +40,29 @@ sections:
   label: Fun Facts
   create: none
   match: home-fun-facts.json
+  templates:
+  - front-page-fun-fact-section
 - type: directory
   path: src/data/homepages
   label: Popular Games
   create: none
   match: home-popular-games.json
+  templates:
+  - front-page-game-section
 - type: directory
   path: src/data/homepages
   label: Testimonials
   create: none
   match: home-testimonials.json
+  templates:
+  - front-page-testimonial-section
 - type: directory
   path: src/data/homepages
   label: Latest News
   create: none
   match: home-latest-news.json
+  templates:
+  - front-page-latest-news-section
 - type: heading
   label: Pages
 - type: directory
