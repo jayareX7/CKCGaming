@@ -85,7 +85,8 @@ fields:
 - name: content
   type: blocks
   label: Content
-  template_types: []
+  template_types:
+  - game-details
   config:
     min: 
     max: 
