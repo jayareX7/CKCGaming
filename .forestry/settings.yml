@@ -37,7 +37,22 @@ sections:
   path: src/data/homepages
   label: Fun Facts
   create: none
-  match: fun-facts.json
+  match: home-fun-facts.json
+- type: directory
+  path: src/data/homepages
+  label: Popular Games
+  create: none
+  match: home-popular-games.json
+- type: directory
+  path: src/data/homepages
+  label: Testimonials
+  create: none
+  match: home-testimonials.json
+- type: directory
+  path: src/data/homepages
+  label: Latest News
+  create: none
+  match: home-latest-news.json
 - type: heading
   label: Pages
 - type: directory
