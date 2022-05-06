@@ -34,15 +34,27 @@ fields:
     - type: text
       name: title
       label: title
-  - name: footer
-    type: field_group
-    config: {}
+- name: footer-2
+  type: field_group_list
+  fields:
+  - name: id
+    type: text
+    config:
+      required: false
+    label: id
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: contact_info
+    type: field_group_list
     fields:
-    - name: id
+    - name: title
       type: text
       config:
         required: false
-      label: id
+      label: Type
     - name: text
       type: textarea
       default: ''
@@ -52,29 +64,11 @@ fields:
         schema:
           format: markdown
       label: text
-    label: footer
-- name: footer-2
-  type: field_group_list
-  fields:
-  - name: id
-    type: text
     config:
-      required: false
-    label: id
-  - name: location
-    type: text
-    config:
-      required: false
-    label: Location
-  - name: text
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: text
+      min: 
+      max: 
+      labelField: 
+    label: Contact Info
   config:
     min: 
     max: 
@@ -94,8 +88,7 @@ fields:
       required: false
     label: Title
   - name: images
-    type: field_group
-    config: {}
+    type: field_group_list
     fields:
     - name: src
       type: file
@@ -107,6 +100,10 @@ fields:
       config:
         required: false
       label: alt
+    config:
+      min: 
+      max: 
+      labelField: 
     label: Images
   config:
     min: 
