@@ -82,7 +82,7 @@ fields:
       required: false
     label: Content
   label: Buttons
-- name: content
+- name: contents
   type: blocks
   label: Content
   template_types:
@@ -90,3 +90,21 @@ fields:
   config:
     min: 
     max: 
+- name: content
+  type: field_group_list
+  fields:
+  - name: id
+    type: text
+    config:
+      required: false
+    label: id
+  - name: section
+    type: text
+    config:
+      required: false
+    label: section
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: content
