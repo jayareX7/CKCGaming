@@ -9,7 +9,7 @@
                 {
                     "id": 1,
                     "icon": "icofont-facebook",
-                    "link": "https://www.facebook.com/CKC",
+                    "link": "https://www.facebook.com",
                     "title": "facebook"
                 },
                 {
@@ -31,9 +31,7 @@
                     "title": "twitter"
                 }
             ]
-        }
-    ],
-    "footer_2": [
+        },
         {
             "id": "footer-2",
             "title": "CONTACT",
@@ -49,9 +47,7 @@
                     "text": "00 (62) 632 867 4497"
                 }
             ]
-        }
-    ],
-    "footer_3": [
+        },
         {
             "id": "footer-3",
             "title": "Information",
@@ -81,9 +77,7 @@
                     "alt": "LIVE STREAMING"
                 }
             ]
-        }
-    ],
-    "footer_4": [
+        },
         {
             "id": "footer-4",
             "title": "Follow Us",
