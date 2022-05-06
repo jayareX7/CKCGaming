@@ -57,39 +57,6 @@ fields:
 - name: is_featured
   type: boolean
   label: Featured
-- name: images
-  type: field_group
-  config: {}
-  fields:
-  - name: src
-    type: file
-    config:
-      maxSize: 64
-    label: src
-  - name: alt
-    type: text
-    config:
-      required: false
-    label: alt
-  label: Images
-- name: buttons
-  type: field_group
-  config: {}
-  fields:
-  - name: content
-    type: text
-    config:
-      required: false
-    label: Content
-  label: Buttons
-- name: contents
-  type: blocks
-  label: Content
-  template_types:
-  - game-details
-  config:
-    min: 
-    max: 
 - name: content
   type: field_group_list
   fields:
@@ -103,6 +70,25 @@ fields:
     config:
       required: false
     label: section
+  - name: items
+    type: field_group
+    config: {}
+    fields:
+    - name: id
+      type: text
+      config:
+        required: false
+      label: id
+    - name: desc
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: desc
+    label: Items
   config:
     min: 
     max: 
