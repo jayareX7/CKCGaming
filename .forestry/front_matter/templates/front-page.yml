@@ -1,13 +1,11 @@
 ---
 label: Front-Page
-hide_body: true
+hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: pageType
-  label: pageType
 - type: field_group_list
   name: content
   label: content
@@ -15,16 +13,10 @@ fields:
   - type: text
     name: id
     label: id
-  - type: text
-    name: section
-    label: section
   - type: field_group_list
     name: headings
     label: headings
     fields:
-    - type: text
-      name: level
-      label: level
     - type: text
       name: content
       label: content
