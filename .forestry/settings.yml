@@ -1,10 +1,9 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: public/admin
-webhook_url: 
+admin_path: "/static/admin"
+webhook_url:
 sections:
-<<<<<<< HEAD
     - type: directory
       path: src/data/general
       label: Test
@@ -72,91 +71,15 @@ sections:
       label: Upcoming
       create: documents
       match: "**/*"
-upload_dir: src/data/images
-public_path:
+upload_dir: uploads
+public_path: data/images
+front_matter_path: data/images
 use_front_matter_path: true
-=======
-- type: directory
-  path: src/data/general
-  label: Test
-  create: none
-  match: "**/*"
-- type: heading
-  label: General Config
-- type: directory
-  path: src/data/general
-  label: Menu Links
-  create: none
-  match: menu.json
-  templates:
-  - menu-links
-- type: document
-  path: package.json
-  label: Site Info
-- type: heading
-  label: Footer Info
-- type: heading
-  label: Front Page (Home)
-- type: document
-  path: src/data/homepages/home.json
-  label: Home
-- type: heading
-  label: Pages
-- type: directory
-  path: src/data/inner-pages
-  label: About Us Test
-  create: none
-  match: about-us-page.json
-- type: directory
-  path: src/data/inner-pages
-  label: Fun Facts
-  create: none
-  match: matchpage.json
-  templates:
-  - fun-facts
-- type: directory
-  path: src/data/inner-pages
-  label: FAQ's
-  create: all
-  match: faq.json
-  templates:
-  - faq-test
-- type: directory
-  path: src/data/inner-pages
-  label: Contact Test
-  create: none
-  match: contact-us-page.json
-- type: heading
-  label: Content
-- type: directory
-  path: src/data/blog-post
-  label: Post
-  create: documents
-  match: "**/*"
-  templates:
-  - post-1
-- type: directory
-  path: src/data/games
-  label: Games
-  create: documents
-  match: "**/*"
-  templates:
-  - games
-- type: directory
-  path: src/data/matchs
-  label: Upcoming
-  create: documents
-  match: "**/*"
-upload_dir: src/data/images
-public_path: ''
-front_matter_path: "/src/data/images"
-use_front_matter_path: false
->>>>>>> 9ea05528df42589008020ff894b2d92c6e48f77f
 file_template: ":filename:"
 build:
-  preview_output_directory: public
-  install_dependencies_command: npm install
-  preview_docker_image: forestryio/node:12
-  mount_path: "/srv"
-  working_dir: "/srv"
-  instant_preview_command: npm run develop
+    preview_output_directory: public
+    install_dependencies_command: npm install
+    preview_docker_image: forestryio/node:12
+    mount_path: "/srv"
+    working_dir: "/srv"
+    instant_preview_command: npm run develop
