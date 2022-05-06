@@ -21,9 +21,11 @@ sections:
   label: Site Info
 - type: heading
   label: Front Page (Home)
-- type: document
-  path: src/data/homepages/home.json
-  label: Home
+- type: directory
+  path: src/data/homepages
+  label: 'Home '
+  create: none
+  match: home.json
 - type: heading
   label: Pages
 - type: directory
