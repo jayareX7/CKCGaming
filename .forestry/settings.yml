@@ -11,7 +11,7 @@ sections:
   label: Menu Links
 - type: directory
   path: src/data/general
-  label: Footer
+  label: Footer Info
   create: none
   match: footer.json
 - type: document
