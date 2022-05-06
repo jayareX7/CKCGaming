@@ -54,7 +54,7 @@ fields:
       type: text
       config:
         required: false
-      label: Location
+      label: Type
     - name: text
       type: textarea
       default: ''
@@ -87,9 +87,8 @@ fields:
     config:
       required: false
     label: Title
-  - name: images
-    type: field_group
-    config: {}
+  - name: imagess
+    type: field_group_list
     fields:
     - name: src
       type: file
@@ -101,6 +100,10 @@ fields:
       config:
         required: false
       label: alt
+    config:
+      min: 
+      max: 
+      labelField: 
     label: Images
   config:
     min: 
