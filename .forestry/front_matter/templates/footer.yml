@@ -34,6 +34,25 @@ fields:
     - type: text
       name: title
       label: title
+  - name: footer
+    type: field_group
+    config: {}
+    fields:
+    - name: id
+      type: text
+      config:
+        required: false
+      label: id
+    - name: text
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: text
+    label: footer
 - name: footer-2
   type: field_group_list
   fields:
