@@ -6,7 +6,7 @@ fields:
   type: text
   config:
     required: false
-  label: title
+  label: Title
 - name: image
   type: file
   config:
@@ -14,10 +14,24 @@ fields:
   label: image
 - name: date
   type: datetime
-  label: date
+  label: Date
   description: Date post was created
   config:
     required: false
     date_format: 
     time_format: 
     display_utc: false
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+- name: quote_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Quote
