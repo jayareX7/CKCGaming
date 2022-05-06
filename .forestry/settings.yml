@@ -71,6 +71,8 @@ sections:
   label: Upcoming
   create: documents
   match: "**/*"
+  templates:
+  - matches
 upload_dir: uploads
 public_path: data/images
 front_matter_path: data/images
