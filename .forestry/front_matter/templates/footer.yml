@@ -42,20 +42,33 @@ fields:
     config:
       required: false
     label: id
-  - name: location
+  - name: title
     type: text
     config:
       required: false
-    label: Location
-  - name: text
-    type: textarea
-    default: ''
+    label: Title
+  - name: contact_info
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Location
+    - name: text
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: text
     config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: text
+      min: 
+      max: 
+      labelField: 
+    label: Contact Info
   config:
     min: 
     max: 
