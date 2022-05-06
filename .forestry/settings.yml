@@ -33,6 +33,8 @@ sections:
   label: Welcome Section
   create: none
   match: home-welcome-section.json
+  templates:
+  - front-page-welcome-section
 - type: directory
   path: src/data/homepages
   label: Fun Facts
