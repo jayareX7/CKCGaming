@@ -1,17 +1,23 @@
 ---
-title: "PLAYROOM"
-image: { src: "../../data/images/blog/3.jpg", alt: "SEEN APPLE" }
-date: "2021-01-21"
-author: "Harold Leonard"
-quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
-categories:
-    - Offline Game
-    - Game Tata
+title: TINY TOTT PLAYGROUND
+image:
+  src: "../../data/images/blog/3.jpg"
+  alt: SEEN APPLE
+date: 2021-01-21
+author: Chasity Atchison
+quote_text: ''
+categories: []
 tags:
-    - Esports
-    - Fantasy
----
+- 'softplay '
+- toddlerplayground
+- toddlergym
+- mommyandme
+- kidsevents
+- toddlerhangout
+- kidsfun
+- indoortoddlergym
 
+---
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical literature from 459, making it over 2000 years old. Richard McClintock, a Latin professor at Virginia looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from written in 45 BC. This book is a treatise on the theory.
 
 ### HOW TO START A VIDEO GAME FROM COMPUTER.
