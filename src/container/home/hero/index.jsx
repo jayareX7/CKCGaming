@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Button from "../../../components/shared/button";
 import HeroImage from "../../../data/images/hero/hero-bg1.webp";
 import WelcomeImage from "../../../data/images/hero/hero-bg2.webp";
+import { colors } from "tailwindcss/defaulttheme";
 
 const HeroArea = ({ data }) => {
     return (
@@ -22,7 +23,7 @@ const HeroArea = ({ data }) => {
                             </h1>
                         )}
                         {data?.texts?.[0] && (
-                            <p className="text-base  lg:text-md font-bold mb-6 sm:mb-10 ">
+                            <p className="text-base text-secondary-120  lg:text-md font-bold mb-6 sm:mb-10">
                                 {data.texts[0].content}
                             </p>
                         )}
