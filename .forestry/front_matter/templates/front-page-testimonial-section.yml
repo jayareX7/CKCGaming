@@ -1,0 +1,54 @@
+---
+label: Front-Page (testimonial-section)
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group_list
+  name: content
+  label: content
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: field_group
+    name: section_title
+    label: section_title
+    fields:
+    - type: boolean
+      name: showDescription
+      label: showDescription
+    - type: text
+      name: heading
+      label: heading
+    - type: text
+      name: description
+      label: description
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: text
+      name: id
+      label: id
+    - type: field_group_list
+      name: images
+      label: images
+      fields:
+      - type: file
+        name: src
+        label: src
+      - type: text
+        name: alt
+        label: alt
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: designation
+      label: designation
+    - type: textarea
+      name: description
+      label: description

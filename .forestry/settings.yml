@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: "/static/admin"
+admin_path: public/admin
 webhook_url: 
 sections:
 - type: heading
@@ -28,6 +28,41 @@ sections:
   match: home.json
   templates:
   - front-page
+- type: directory
+  path: src/data/homepages
+  label: Welcome Section
+  create: none
+  match: home-welcome-section.json
+  templates:
+  - front-page-welcome-section
+- type: directory
+  path: src/data/homepages
+  label: Fun Facts
+  create: none
+  match: home-fun-facts.json
+  templates:
+  - front-page-fun-fact-section
+- type: directory
+  path: src/data/homepages
+  label: Popular Games
+  create: none
+  match: home-popular-games.json
+  templates:
+  - front-page-game-section
+- type: directory
+  path: src/data/homepages
+  label: Testimonials
+  create: none
+  match: home-testimonials.json
+  templates:
+  - front-page-testimonial-section
+- type: directory
+  path: src/data/homepages
+  label: Latest News
+  create: none
+  match: home-latest-news.json
+  templates:
+  - front-page-latest-news-section
 - type: heading
   label: Pages
 - type: directory
@@ -77,10 +112,10 @@ sections:
   match: "**/*"
   templates:
   - matches
-upload_dir: uploads
-public_path: data/images
+upload_dir: src/data/images
+public_path: ''
 front_matter_path: data/images
-use_front_matter_path: true
+use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: public

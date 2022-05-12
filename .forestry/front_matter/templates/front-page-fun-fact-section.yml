@@ -1,0 +1,32 @@
+---
+label: Front-Page (fun-fact-section)
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group_list
+  name: content
+  label: content
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: text
+      name: id
+      label: id
+    - type: number
+      name: countNumber
+      label: countNumber
+    - type: field_group_list
+      name: headings
+      label: headings
+      fields:
+      - type: text
+        name: content
+        label: content
