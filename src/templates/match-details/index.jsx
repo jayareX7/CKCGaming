@@ -390,6 +390,15 @@ export const postQuery = graphql`
                 footer {
                     ...Footer
                 }
+                footer {
+                    ...Footer2
+                }
+                footer {
+                    ...Footer3
+                }
+                footer {
+                    ...Footer4
+                }
             }
         }
         match(slug: { eq: $slug }) {

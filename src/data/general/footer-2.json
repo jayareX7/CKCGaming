@@ -1,0 +1,22 @@
+{
+    "id": "footer-2-data",
+    "section": "footer2",
+    "footer": [
+        {
+            "id": "footer-2",
+            "title": "CONTACT",
+            "contact_info": [
+                {
+                    "id": "contact_info-21",
+                    "title": "Location",
+                    "text": "136 Harding Ave Wheeling, West Virginia"
+                },
+                {
+                    "id": "contact_info-22",
+                    "title": "Phone",
+                    "text": "00 (62) 632 867 4497"
+                }
+            ]
+        }
+    ]
+}

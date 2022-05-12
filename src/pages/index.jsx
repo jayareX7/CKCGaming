@@ -86,6 +86,15 @@ export const query = graphql`
                 footer {
                     ...Footer
                 }
+                footer {
+                    ...Footer2
+                }
+                footer {
+                    ...Footer3
+                }
+                footer {
+                    ...Footer4
+                }
             }
         }
         pages1: page(title: { eq: "home" }, pageType: { eq: homepage }) {
@@ -109,6 +118,7 @@ export const query = graphql`
                 ...PageContentAll
             }
         }
+
         pages5: page(
             title: { eq: "home-popular-games" }
             pageType: { eq: homepage }

@@ -1,13 +1,12 @@
 import { graphql } from "gatsby";
 
 export const query = graphql`
-    fragment Footer on Footer {
+    fragment Footer2 on Footer {
         id
-        text
-        socials {
+        title
+        contact_info {
             id
-            icon
-            link
+            text
             title
         }
     }

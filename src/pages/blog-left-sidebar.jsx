@@ -14,6 +14,9 @@ const BlogLeftSidebarPage = ({ data, location, pageContext }) => {
             data={{
                 ...globalContent["menu"],
                 ...globalContent["footer"],
+                ...globalContent["footer-2"],
+                ...globalContent["footer-3"],
+                ...globalContent["footer-4"],
             }}
         >
             <SEO title="Blog Left Sidebar" pathname="/" />
@@ -53,6 +56,31 @@ export const query = graphql`
                 menu {
                     ...Menu
                 }
+            }
+        }
+        footer: allGeneral(filter: { section: { eq: "footer" } }) {
+            nodes {
+                footer {
+                    ...Footer
+                }
+            }
+        }
+        footer2: allGeneral(filter: { section: { eq: "footer-2" } }) {
+            nodes {
+                footer {
+                    ...Footer
+                }
+            }
+        }
+        footer3: allGeneral(filter: { section: { eq: "footer-3" } }) {
+            nodes {
+                footer {
+                    ...Footer
+                }
+            }
+        }
+        footer4: allGeneral(filter: { section: { eq: "footer-4" } }) {
+            nodes {
                 footer {
                     ...Footer
                 }

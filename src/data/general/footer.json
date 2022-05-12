@@ -83,39 +83,29 @@
             "title": "Follow Us",
             "list": [
                 {
-                    "id": "menu-41",
-                    "text": "Blog Without Sidebar Page",
-                    "link": "/blog-without-sidebar"
+                    "id": "footer-follow-01",
+                    "text": "Copywriting",
+                    "link": "https://dribbble.com"
                 },
                 {
-                    "id": "menu-42",
-                    "text": "Blog Left Sidebar Page",
-                    "link": "/blog-left-sidebar"
+                    "id": "footer-follow-02",
+                    "text": "Social Media",
+                    "link": "https://dribbble.com"
                 },
                 {
-                    "id": "menu-43",
-                    "text": "Blog Right Sidebar Page",
-                    "link": "/blog-right-sidebar"
+                    "id": "footer-follow-03",
+                    "text": "Interactive Media",
+                    "link": "https://dribbble.com"
                 },
                 {
-                    "id": "menu-44",
-                    "text": "Blog Grid Left Sidebar Page",
-                    "link": "/blog-grid-left-sidebar"
+                    "id": "footer-follow-04",
+                    "text": "Motion Design",
+                    "link": "https://dribbble.com"
                 },
                 {
-                    "id": "menu-45",
-                    "text": "Blog Grid Without Sidebar",
-                    "link": "/blog-grid-without-sidebar"
-                },
-                {
-                    "id": "menu-46",
-                    "text": "Blog Grid Left Sidebar",
-                    "link": "/blog-grid-left-sidebar"
-                },
-                {
-                    "id": "menu-47",
-                    "text": "Blog Grid Right Sidebar",
-                    "link": "/blog-grid-right-sidebar"
+                    "id": "footer-follow-05",
+                    "text": "Illustration",
+                    "link": "https://dribbble.com"
                 }
             ]
         }

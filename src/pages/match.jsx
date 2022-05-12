@@ -66,6 +66,15 @@ export const query = graphql`
                 footer {
                     ...Footer
                 }
+                footer {
+                    ...Footer2
+                }
+                footer {
+                    ...Footer3
+                }
+                footer {
+                    ...Footer4
+                }
             }
         }
         page(title: { eq: "matchPage" }, pageType: { eq: innerpage }) {
