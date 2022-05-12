@@ -12,7 +12,6 @@ module.exports = `
     type PageContent {
         id: ID!
         section: String!
-        headings: [Heading]
         texts: [Text]
         items: [Item]
         section_title: SectionTitle

@@ -13,10 +13,6 @@ export const query = graphql`
         liveStreaming {
             id
             link
-            headings {
-                content
-                level
-            }
             images {
                 alt
                 src {

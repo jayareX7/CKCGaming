@@ -23,7 +23,6 @@ module.exports = `
     }
     type LiveStreaming {
         id: ID!
-        headings: [Heading]
         images: [Image]
         link: String
     }

@@ -43,9 +43,6 @@ export const query = graphql`
         content {
             id
             section
-            headings {
-                content
-            }
             items {
                 id
                 desc

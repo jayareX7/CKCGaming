@@ -19,7 +19,6 @@ module.exports = `
     }
     type GameContent {
         id: ID!
-        headings: [Heading]
     }
     type Item {
         id: ID!

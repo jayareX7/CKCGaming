@@ -3,10 +3,6 @@ import { graphql } from "gatsby";
 export const query = graphql`
     fragment PageContentAll on PageContent {
         section
-        headings {
-            content
-            level
-        }
         link
         items {
             id
@@ -19,10 +15,6 @@ export const query = graphql`
             subject
             icon
             countNumber
-            headings {
-                level
-                content
-            }
             images {
                 ...Image
             }
