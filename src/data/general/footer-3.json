@@ -1,0 +1,36 @@
+{
+    "id": "footer-3-data",
+    "section": "footer3",
+    "footer3": [
+        {
+            "id": "footer-3",
+            "title": "Information",
+            "images": [
+                {
+                    "src": "../../data/images/team-logo/upcoming-game-thumb1.webp",
+                    "alt": "GAME TOURNAMENTS"
+                },
+                {
+                    "src": "../../data/images/team-logo/upcoming-game-thumb2.webp",
+                    "alt": "LIVE STREAMING"
+                },
+                {
+                    "src": "../../data/images/team-logo/upcoming-game-thumb3.webp",
+                    "alt": "GAME TOURNAMENTS"
+                },
+                {
+                    "src": "../../data/images/team-logo/upcoming-game-thumb4.webp",
+                    "alt": "LIVE STREAMING"
+                },
+                {
+                    "src": "../../data/images/team-logo/upcoming-game-thumb5.webp",
+                    "alt": "GAME TOURNAMENTS"
+                },
+                {
+                    "src": "../../data/images/team-logo/upcoming-game-thumb6.webp",
+                    "alt": "LIVE STREAMING"
+                }
+            ]
+        }
+    ]
+}

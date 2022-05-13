@@ -141,6 +141,15 @@ export const postQuery = graphql`
                 footer {
                     ...Footer
                 }
+                footer2 {
+                    ...Footer2
+                }
+                footer3 {
+                    ...Footer3
+                }
+                footer4 {
+                    ...Footer4
+                }
             }
         }
         players(slug: { eq: $slug }) {

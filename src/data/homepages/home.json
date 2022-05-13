@@ -1,5 +1,5 @@
 {
-  "title": "Home",
+  "title": "home",
   "pageType": "homepage",
   "content": [
     {
@@ -12,17 +12,10 @@
         }
       ],
       "texts": [
-        {
-          "content": "Simply text of the printing and typesetting industry."
-        }
+
       ],
       "buttons": [
-        {
-          "id": 1,
-          "size": "lg",
-          "path": "/contact-us",
-          "content": "'Contact Us'"
-        }
+
       ]
     }
   ]
