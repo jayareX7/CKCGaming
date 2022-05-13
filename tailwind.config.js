@@ -36,9 +36,6 @@ module.exports = {
                 turquoise: "#1DE3EB",
                 punch: "#DF4C21",
             },
-            textShadow: {
-                textshadow: "rgba(139,69,19,0.75)",
-            },
             borderRadius: {
                 20: "20px",
                 22: "22px",
@@ -148,7 +145,7 @@ module.exports = {
                 n1: "-1",
             },
             fontFamily: {
-                metal: ["'Dekko', serif"],
+                metal: ["'Metal Mania', cursive"],
                 exo: ["'Exo', sans-serif"],
             },
             container: {

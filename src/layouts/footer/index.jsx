@@ -81,9 +81,9 @@ Footer.propTypes = {
         footer: PropTypes.arrayOf(
             PropTypes.shape({
                 link: PropTypes.string,
-                title: PropTypes.string,
             })
         ),
     }),
 };
+
 export default Footer;

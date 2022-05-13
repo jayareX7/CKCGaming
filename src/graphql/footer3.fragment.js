@@ -1,14 +1,16 @@
 import { graphql } from "gatsby";
 
 export const query = graphql`
-    fragment Footer3 on Footer {
+    fragment Footer3 on Footer3 {
         id
         title
-        list {
-            id
-            link
-            text
-            icon
+        images {
+            alt
+            src {
+                childImageSharp {
+                    gatsbyImageData(quality: 100)
+                }
+            }
         }
     }
 `;

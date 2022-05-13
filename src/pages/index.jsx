@@ -16,6 +16,8 @@ import PlayroomAd from "../components/playroom-ad";
 import OurTeamsArea from "../container/about-us/our-teams";
 
 const IndexPage = ({ data }) => {
+    const menuContent = normalizedData(data?.allGeneral?.nodes || []);
+    const footerOneContent = normalizedData(data?.allGeneral?.nodes || []);
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const homeContent = normalizedData(data?.pages1?.content || []);
     const welcomeContent = normalizedData(data?.pages2?.content || []);
@@ -27,8 +29,11 @@ const IndexPage = ({ data }) => {
     return (
         <Layout
             data={{
-                ...globalContent["menu"],
-                ...globalContent["footer"],
+                ...menuContent["menu"],
+                ...footerOneContent["footer"],
+                ...globalContent["footer2"],
+                ...globalContent["footer3"],
+                ...globalContent["footer4"],
             }}
         >
             <SEO title="Home" pathname="/" />
@@ -86,13 +91,13 @@ export const query = graphql`
                 footer {
                     ...Footer
                 }
-                footer {
+                footer2 {
                     ...Footer2
                 }
-                footer {
+                footer3 {
                     ...Footer3
                 }
-                footer {
+                footer4 {
                     ...Footer4
                 }
             }
@@ -118,7 +123,6 @@ export const query = graphql`
                 ...PageContentAll
             }
         }
-
         pages5: page(
             title: { eq: "home-popular-games" }
             pageType: { eq: homepage }

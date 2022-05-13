@@ -194,13 +194,13 @@ export const postQuery = graphql`
                 footer {
                     ...Footer
                 }
-                footer {
+                footer2 {
                     ...Footer2
                 }
-                footer {
+                footer3 {
                     ...Footer3
                 }
-                footer {
+                footer4 {
                     ...Footer4
                 }
             }

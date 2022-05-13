@@ -10,6 +10,9 @@ module.exports = ({ node, actions, createNodeId }) => {
             section: node.section,
             menu: node.menu,
             footer: node.footer,
+            footer2: node.footer2,
+            footer3: node.footer3,
+            footer4: node.footer4,
             internal: {
                 type: "General",
                 contentDigest: node.internal.contentDigest,

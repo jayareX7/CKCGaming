@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&family=Metal+Mania&display=swap");
 @import "./swiper.css";
 @import "./social.css";
 /* html {
@@ -6,12 +7,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-    font-family: "Dekka";
-    src: url("../../../public/fonts/Dekka.otf");
-    src: url("../../../public/fonts/Dekka.ttf");
-}
 
 @layer base {
     body {

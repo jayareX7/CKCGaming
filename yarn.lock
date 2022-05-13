@@ -3372,7 +3372,7 @@
     "parse5-htmlparser2-tree-adapter" "^6.0.1"
     "tslib" "^2.2.0"
 
-"chokidar@^3.5.2":
+"chokidar@^3.5.2", "chokidar@>=3.0.0 <4.0.0":
   "integrity" "sha512-ekGhOnNVPgT77r4K/U3GDhu+FQ2S8TnK/s2KbIGXi0SZWuwkZ2QNyfWdZW+TVfn84DpEP7rLeCt2UI6bJ8GwbQ=="
   "resolved" "https://registry.npmjs.org/chokidar/-/chokidar-3.5.2.tgz"
   "version" "3.5.2"
@@ -6912,6 +6912,11 @@
   "integrity" "sha512-aqXhGP7//Gui2+UrEtvxZxSquQVXTpZ7KDxfCcKAF3Vysvw0CViVaW9RZ1j1xlIYqaaaipBoqdqeibkc18PNvA=="
   "resolved" "https://registry.npmjs.org/immer/-/immer-8.0.1.tgz"
   "version" "8.0.1"
+
+"immutable@^4.0.0":
+  "integrity" "sha512-zIE9hX70qew5qTUjSS7wi1iwj/l7+m54KWU247nhM3v806UdGj1yDndXj+IOYxxtW9zyLI+xqFNZjTuDaLUqFw=="
+  "resolved" "https://registry.npmjs.org/immutable/-/immutable-4.0.0.tgz"
+  "version" "4.0.0"
 
 "import-cwd@^3.0.0":
   "integrity" "sha512-4pnzH16plW+hgvRECbDWpQl3cqtvSofHWh44met7ESfZ8UZOWWddm8hEyDTqREJ9RbYHY8gi8DqmaelApoOGMg=="
@@ -11094,6 +11099,15 @@
     "parse-srcset" "^1.0.2"
     "postcss" "^7.0.27"
 
+"sass@^1.51.0":
+  "integrity" "sha512-haGdpTgywJTvHC2b91GSq+clTKGbtkkZmVAb82jZQN/wTy6qs8DdFm2lhEQbEwrY0QDRgSQ3xDurqM977C3noA=="
+  "resolved" "https://registry.npmjs.org/sass/-/sass-1.51.0.tgz"
+  "version" "1.51.0"
+  dependencies:
+    "chokidar" ">=3.0.0 <4.0.0"
+    "immutable" "^4.0.0"
+    "source-map-js" ">=0.6.2 <2.0.0"
+
 "sax@^1.2.4", "sax@>=0.6.0", "sax@~1.2.4":
   "integrity" "sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw=="
   "resolved" "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz"
@@ -11480,7 +11494,7 @@
   "resolved" "https://registry.npmjs.org/source-list-map/-/source-list-map-2.0.1.tgz"
   "version" "2.0.1"
 
-"source-map-js@^0.6.2":
+"source-map-js@^0.6.2", "source-map-js@>=0.6.2 <2.0.0":
   "integrity" "sha512-/3GptzWzu0+0MBQFrDKzw/DvvMTUORvgY6k6jd/VS6iCR4RDTKWH6v6WPwQoUO8667uQEf9Oe38DxAYWY5F/Ug=="
   "resolved" "https://registry.npmjs.org/source-map-js/-/source-map-js-0.6.2.tgz"
   "version" "0.6.2"

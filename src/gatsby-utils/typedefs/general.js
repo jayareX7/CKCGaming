@@ -4,6 +4,9 @@ module.exports = `
         section: String!
         menu: [Menu]
         footer: [Footer]
+        footer2: [Footer2]
+        footer3: [Footer3]
+        footer4: [Footer4]
     }
     type Menu {
         id: ID!
@@ -24,12 +27,23 @@ module.exports = `
     type Footer {
         id: ID!
         text: String
-        link: String
-        icon: String
-        list: [List]
-        socials: [Social]
-        contact_info: [ContactInfo]
         images: [Image]
+
+    }
+    type Footer2 {
+        id: ID!
+        text: String
+        contact_info: [ContactInfo]
+    }
+    type Footer3 {
+        id: ID!
+        text: String
+        images: [Image]
+    }
+    type Footer4 {
+        id: ID!
+        text: String
+        list: [List]
     }
     type ContactInfo {
         id: ID!
