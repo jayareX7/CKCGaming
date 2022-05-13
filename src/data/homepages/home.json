@@ -1,29 +1,22 @@
 {
-    "title": "home",
-    "pageType": "homepage",
-    "content": [
+  "title": "Home",
+  "pageType": "homepage",
+  "content": [
+    {
+      "id": "hero-section-content",
+      "section": "hero-section",
+      "headings": [
         {
-            "id": "hero-section-content",
-            "section": "hero-section",
-            "headings": [
-                {
-                    "level": "h1",
-                    "content": "BEST GAME PLAYING TODAY."
-                }
-            ],
-            "texts": [
-                {
-                    "content": "Simply text of the printing and typesetting industry."
-                }
-            ],
-            "buttons": [
-                {
-                    "id": 1,
-                    "size": "lg",
-                    "path": "/contact-us",
-                    "content": "Play Now"
-                }
-            ]
+          "level": "h1",
+          "content": "Come In Today"
         }
-    ]
+      ],
+      "texts": [
+
+      ],
+      "buttons": [
+
+      ]
+    }
+  ]
 }
