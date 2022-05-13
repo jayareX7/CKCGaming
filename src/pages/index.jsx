@@ -16,8 +16,6 @@ import PlayroomAd from "../components/playroom-ad";
 import OurTeamsArea from "../container/about-us/our-teams";
 
 const IndexPage = ({ data }) => {
-    const menuContent = normalizedData(data?.allGeneral?.nodes || []);
-    const footerOneContent = normalizedData(data?.allGeneral?.nodes || []);
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const homeContent = normalizedData(data?.pages1?.content || []);
     const welcomeContent = normalizedData(data?.pages2?.content || []);
@@ -29,11 +27,8 @@ const IndexPage = ({ data }) => {
     return (
         <Layout
             data={{
-                ...menuContent["menu"],
-                ...footerOneContent["footer"],
-                ...globalContent["footer2"],
-                ...globalContent["footer3"],
-                ...globalContent["footer4"],
+                ...globalContent["menu"],
+                ...globalContent["footer"],
             }}
         >
             <SEO title="Home" pathname="/" />
@@ -91,6 +86,7 @@ export const query = graphql`
                 footer {
                     ...Footer
                 }
+
                 footer2 {
                     ...Footer2
                 }
