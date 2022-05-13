@@ -1,5 +1,5 @@
 {
-  "title": "contactUsPage",
+  "title": "Contact Us",
   "pageType": "innerpage",
   "content": [
     {
@@ -21,7 +21,7 @@
           "id": "contact-us-info-1",
           "headings": [
             {
-              "level": "h3",
+              "level": "",
               "content": "EMAIL: CKCKIDSATPLAY@GMAIL.COM"
             }
           ],
@@ -29,20 +29,12 @@
             {
               "src": "../../data/images/icons/email.webp",
               "alt": "LIVE STREAMING"
-            },
-            {
-              "src": "../../data/images/features/gaming-world-bg2.webp",
-              "alt": "LIVE STREAMING"
             }
           ],
           "action_link": [
             {
               "title": "gamestudio@gmail.com",
               "link": "mailto:gamestudio@gmail.com"
-            },
-            {
-              "title": "support24@gmail.com",
-              "link": "mailto:support24@gmail.com"
             }
           ]
         },
