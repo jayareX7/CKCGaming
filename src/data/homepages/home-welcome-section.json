@@ -15,22 +15,12 @@
         {
           "id": "features-1",
           "headings": [
-            {
-              "level": "h3",
-              "content": "LIVE STREAMING"
-            }
+
           ],
           "images": [
-            {
-              "src": "../../data/images/features/gaming-world1.webp",
-              "alt": "LIVE STREAMING"
-            },
-            {
-              "src": "../../data/images/features/gaming-world-bg1.webp",
-              "alt": "LIVE STREAMING"
-            }
+
           ],
-          "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
+          "description": ""
         },
         {
           "id": "features-2",
