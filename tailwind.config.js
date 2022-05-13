@@ -145,7 +145,7 @@ module.exports = {
                 n1: "-1",
             },
             fontFamily: {
-                metal: ["'Metal Mania', cursive"],
+                metal: ["'Luckiest Guy', cursive"],
                 exo: ["'Exo', sans-serif"],
             },
             container: {
