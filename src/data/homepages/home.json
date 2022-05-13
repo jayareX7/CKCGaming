@@ -1,22 +1,18 @@
 {
-  "title": "Home",
-  "pageType": "homepage",
-  "content": [
-    {
-      "id": "hero-section-content",
-      "section": "hero-section",
-      "headings": [
+    "title": "Home",
+    "pageType": "homepage",
+    "content": [
         {
-          "level": "h1",
-          "content": "'Come In Today'"
+            "id": "hero-section-content",
+            "section": "hero-section",
+            "headings": [
+                {
+                    "level": "h1",
+                    "content": "Come Today"
+                }
+            ],
+            "texts": [],
+            "buttons": []
         }
-      ],
-      "texts": [
-
-      ],
-      "buttons": [
-
-      ]
-    }
-  ]
+    ]
 }
