@@ -2,125 +2,125 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: public/admin
-webhook_url: 
+webhook_url:
 sections:
-- type: heading
-  label: General Config
-- type: document
-  path: src/data/general/menu.json
-  label: Menu Links
-- type: directory
-  path: src/data/general
-  label: Footer Links
-  create: none
-  match: footer.json
-  templates:
-  - footer
-- type: document
-  path: package.json
-  label: Site Info
-- type: heading
-  label: Front Page (Home)
-- type: directory
-  path: src/data/homepages
-  label: 'Home '
-  create: none
-  match: home.json
-  templates:
-  - front-page
-- type: directory
-  path: src/data/homepages
-  label: Welcome Section
-  create: none
-  match: home-welcome-section.json
-  templates:
-  - front-page-welcome-section
-- type: directory
-  path: src/data/homepages
-  label: Fun Facts
-  create: none
-  match: home-fun-facts.json
-  templates:
-  - front-page-fun-fact-section
-- type: directory
-  path: src/data/homepages
-  label: Popular Games
-  create: none
-  match: home-popular-games.json
-  templates:
-  - front-page-game-section
-- type: directory
-  path: src/data/homepages
-  label: Testimonials
-  create: none
-  match: home-testimonials.json
-  templates:
-  - front-page-testimonial-section
-- type: directory
-  path: src/data/homepages
-  label: Latest News
-  create: none
-  match: home-latest-news.json
-  templates:
-  - front-page-latest-news-section
-- type: heading
-  label: Pages
-- type: directory
-  path: src/data/inner-pages
-  label: About Us Test
-  create: none
-  match: about-us-page.json
-- type: directory
-  path: src/data/inner-pages
-  label: Fun Facts
-  create: none
-  match: matchpage.json
-  templates:
-  - fun-facts
-- type: directory
-  path: src/data/inner-pages
-  label: FAQ's
-  create: all
-  match: faq.json
-  templates:
-  - faq-test
-- type: directory
-  path: src/data/inner-pages
-  label: Contact Test
-  create: none
-  match: contact-us-page.json
-- type: heading
-  label: Content
-- type: directory
-  path: src/data/blog-post
-  label: Post
-  create: documents
-  match: "**/*"
-  templates:
-  - post-1
-- type: directory
-  path: src/data/games
-  label: Games
-  create: documents
-  match: "**/*"
-  templates:
-  - games
-- type: directory
-  path: src/data/matchs
-  label: Upcoming
-  create: documents
-  match: "**/*"
-  templates:
-  - matches
+    - type: heading
+      label: General Config
+    - type: document
+      path: src/data/general/menu.json
+      label: Menu Links
+    - type: directory
+      path: src/data/general
+      label: Footer Links
+      create: none
+      match: footer.json
+      templates:
+          - footer
+    - type: document
+      path: package.json
+      label: Site Info
+    - type: heading
+      label: Front Page (Home)
+    - type: directory
+      path: src/data/homepages
+      label: "Home "
+      create: none
+      match: home.json
+      templates:
+          - front-page
+    - type: directory
+      path: src/data/homepages
+      label: Welcome Section
+      create: none
+      match: home-welcome-section.json
+      templates:
+          - front-page-welcome-section
+    - type: directory
+      path: src/data/homepages
+      label: Fun Facts
+      create: none
+      match: home-fun-facts.json
+      templates:
+          - front-page-fun-fact-section
+    - type: directory
+      path: src/data/homepages
+      label: Popular Games
+      create: none
+      match: home-popular-games.json
+      templates:
+          - front-page-game-section
+    - type: directory
+      path: src/data/homepages
+      label: Testimonials
+      create: none
+      match: home-testimonials.json
+      templates:
+          - front-page-testimonial-section
+    - type: directory
+      path: src/data/homepages
+      label: Latest News
+      create: none
+      match: home-latest-news.json
+      templates:
+          - front-page-latest-news-section
+    - type: heading
+      label: Pages
+    - type: directory
+      path: src/data/inner-pages
+      label: About Us Test
+      create: none
+      match: about-ckc-page.json
+    - type: directory
+      path: src/data/inner-pages
+      label: Fun Facts
+      create: none
+      match: matchpage.json
+      templates:
+          - fun-facts
+    - type: directory
+      path: src/data/inner-pages
+      label: FAQ's
+      create: all
+      match: faq.json
+      templates:
+          - faq-test
+    - type: directory
+      path: src/data/inner-pages
+      label: Contact Test
+      create: none
+      match: contact-us-page.json
+    - type: heading
+      label: Content
+    - type: directory
+      path: src/data/blog-post
+      label: Post
+      create: documents
+      match: "**/*"
+      templates:
+          - post-1
+    - type: directory
+      path: src/data/games
+      label: Games
+      create: documents
+      match: "**/*"
+      templates:
+          - games
+    - type: directory
+      path: src/data/matchs
+      label: Upcoming
+      create: documents
+      match: "**/*"
+      templates:
+          - matches
 upload_dir: src/data/images
-public_path: ''
+public_path: ""
 front_matter_path: data/images
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_output_directory: public
-  install_dependencies_command: npm install
-  preview_docker_image: forestryio/node:12
-  mount_path: "/srv"
-  working_dir: "/srv"
-  instant_preview_command: npm run develop
+    preview_output_directory: public
+    install_dependencies_command: npm install
+    preview_docker_image: forestryio/node:12
+    mount_path: "/srv"
+    working_dir: "/srv"
+    instant_preview_command: npm run develop

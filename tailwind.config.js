@@ -20,6 +20,7 @@ module.exports = {
                     100: "#FFFFFF",
                     120: "#F67241",
                     150: "#CB5327",
+                    180: "#13358f",
                 },
                 yollow: {
                     DEFAULT: "#ffa700",

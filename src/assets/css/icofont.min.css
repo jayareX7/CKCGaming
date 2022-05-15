@@ -3447,9 +3447,11 @@
 }
 .icofont-ui-play-stop:before {
     content: "\ec73";
+    color: #fff;
 }
 .icofont-ui-play:before {
     content: "\ec74";
+    color: #fff;
 }
 .icofont-ui-pointer:before {
     content: "\ec75";

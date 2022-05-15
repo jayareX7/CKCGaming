@@ -22,14 +22,13 @@ const MatchPage = ({ data, location, pageContext }) => {
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="ALL CKC GAME"
+                title="ALL CKC GAMES"
             />
             <GamesArea
                 data={{
                     items: data.allGames.nodes,
                 }}
             />
-            <FunfactArea data={content["funfact-section"]} />
         </Layout>
     );
 };

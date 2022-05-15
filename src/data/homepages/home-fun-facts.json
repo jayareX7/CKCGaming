@@ -8,41 +8,41 @@
             "items": [
                 {
                     "id": "funfact-01",
-                    "countNumber": 8697,
+                    "countNumber": 50,
                     "headings": [
                         {
                             "level": "h3",
-                            "content": "TWITCH STREAMS"
+                            "content": "PARTY RENTAL EQUIPMENT"
                         }
                     ]
                 },
                 {
                     "id": "funfact-02",
-                    "countNumber": 520,
+                    "countNumber": 106,
                     "headings": [
                         {
                             "level": "h3",
-                            "content": "TOTAL GAMES"
+                            "content": "VARIOUS GAME TITLES"
                         }
                     ]
                 },
                 {
                     "id": "funfact-03",
-                    "countNumber": 5367,
+                    "countNumber": 2,
                     "headings": [
                         {
                             "level": "h3",
-                            "content": "YOUTUBE STREAMS"
+                            "content": "KID-FRIENDLY PLAY AREAS"
                         }
                     ]
                 },
                 {
                     "id": "funfact-04",
-                    "countNumber": 249,
+                    "countNumber": 500,
                     "headings": [
                         {
                             "level": "h3",
-                            "content": "PRO TEAM"
+                            "content": "SMILES MADE"
                         }
                     ]
                 }

@@ -1,10 +1,10 @@
 {
-    "id": "players-06",
-    "title": "SPACE GAME EXPERT 2",
-    "name": "WARRIOR-782",
-    "needLavel": "60 LEVEL COMPLETED",
+    "id": "players-02",
+    "title": "GAMEROOM SERVICES",
+    "name": "GAMEROOM",
+    "needLavel": "36 LEVEL COMPLETED",
     "image": {
-        "src": "../../data/images/game-players/player-6.webp",
+        "src": "../../data/images/game-players/player-2.webp",
         "alt": "Anonymous"
     },
     "socials": [

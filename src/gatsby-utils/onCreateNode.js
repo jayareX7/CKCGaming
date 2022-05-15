@@ -107,6 +107,31 @@ module.exports = ({ node, actions, createNodeId }) => {
             },
         });
     }
+    // Games pages
+    if (node.internal.type === "GamesJson") {
+        createNode({
+            id: createNodeId(`Games-${node.id}`),
+            parent: node.id,
+            title: node.title,
+            slug: slugify(node.title),
+            gameThum: node.gameThum,
+            categories: node.categories,
+            date: node.date,
+            updated: node.updated,
+            size: node.size,
+            installs: node.installs,
+            currentVersion: node.currentVersion,
+            inAppProducts: node.inAppProducts,
+            images: node.images,
+            buttons: node.buttons,
+            quoteText: node.quoteText,
+            content: node.content,
+            internal: {
+                type: "Games",
+                contentDigest: node.internal.contentDigest,
+            },
+        });
+    }
     // Match pages
     if (node.internal.type === "PlayersJson") {
         createNode({

@@ -1,11 +1,11 @@
 {
-    "id": "game-01",
-    "title": "Alien Space - SNIPER SHOOTER",
+    "id": "rental-06",
+    "title": "Rental #6",
     "gameThum": {
-        "src": "../../data/images/game/popular-game-thumb1.webp",
+        "src": "../../data/images/game/popular-game-thumb4.webp",
         "alt": "Anonymous"
     },
-    "categories": ["Drawing", "Collage"],
+    "categories": ["Drawing", "Game one"],
     "is_featured": true,
     "images": [
         {

@@ -25,11 +25,11 @@ const MatchItem = ({
 
     return (
         <Fragment>
-            <div className="flex flex-col lg:flex-row lg:justify-between mb-8 items-center last:mb-0 border-4 border-secondary-90 bg-secondary-100 border-opacity-100 rounded-4xl px-6 py-8 lg:py-16 lg:px-8">
+            <div className="flex flex-col lg:flex-row lg:justify-between mb-8 items-center last:mb-0 border-4 border-primary bg-secondary-180 border-opacity-100 rounded-4xl px-6 py-8 lg:py-16 lg:px-8">
                 <div className="flex-1 text-center lg:text-left mb-6 lg:mb-0 upcoming_gaming_list">
                     <div className="upcoming_gaming_text text-white">
-                        <p>{date}</p>
-                        <h3 className="font-bold lg:text-35base mb-3 uppercase">
+                        <p className="text-white">{date}</p>
+                        <h3 className="text-primary font-bold lg:text-35base mb-3 uppercase">
                             <Link
                                 to={`/match/${slug}`}
                                 className="hover:text-primary"
@@ -37,7 +37,7 @@ const MatchItem = ({
                                 {title}
                             </Link>
                         </h3>
-                        <span className="text-primary">
+                        <span className="text-white">
                             {registeredTeams} Teams Registered
                         </span>
                     </div>

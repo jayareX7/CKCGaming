@@ -19,7 +19,7 @@ const FAQSection = ({ data }) => {
                                 <AccordionItem
                                     id={item.id}
                                     key={item.id}
-                                    className="border-secondary-80 px-4 py-5 lg:px-12 lg:py-7 border-solid border-2 rounded-md mb-4 z-10"
+                                    className="border-primary bg-secondary-180 px-4 py-5 lg:px-12 lg:py-7 border-solid border-4 rounded-md mb-4 z-10"
                                 >
                                     <AccordionItemHeading>
                                         <AccordionItemButton className="acc-btn font-bold lg:text-md">

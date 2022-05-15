@@ -5,7 +5,6 @@ import Layout from "@layout";
 import HeroArea from "../container/home/hero";
 import WelcomeFeaturesArea from "../container/home/welcome-features";
 import WatchLiveStremingArea from "../container/home/watch-live-streaming";
-import MatchArea from "../container/home/match";
 import PopulerGamesArea from "../container/home/popular-game";
 import TestimonialArea from "../container/home/testimonial";
 import LatestBlogArea from "../container/home/latest-blog";
@@ -13,13 +12,14 @@ import { graphql } from "gatsby";
 import { normalizedData } from "@utils/functions";
 import FunfactArea from "../container/home/funfact";
 import PlayroomAd from "../components/playroom-ad";
-import OurTeamsArea from "../container/about-us/our-teams";
+import InfoArea from "../container/home/info";
 
 const IndexPage = ({ data }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const homeContent = normalizedData(data?.pages1?.content || []);
     const welcomeContent = normalizedData(data?.pages2?.content || []);
     const funContent = normalizedData(data?.pages3?.content || []);
+    const infoContent = normalizedData(data?.pages4?.content || []);
     const gameContent = normalizedData(data?.pages5?.content || []);
     const testimonialContent = normalizedData(data?.pages6?.content || []);
     const latestContent = normalizedData(data?.pages7?.content || []);
@@ -33,16 +33,17 @@ const IndexPage = ({ data }) => {
         >
             <SEO title="Home" pathname="/" />
             <HeroArea data={homeContent["hero-section"]} />
-
+            <InfoArea data={infoContent["info-section"]} />
             <WelcomeFeaturesArea data={welcomeContent["welcome-section"]} />
-            <WatchLiveStremingArea data={{ items: data.allMatch.nodes }} />
-            <FunfactArea data={funContent["funfact-section"]} />
+            <PlayroomAd />
+
             <PopulerGamesArea
                 data={{
                     ...gameContent["populer-games-section"],
                     items: data.allGames.nodes,
                 }}
             />
+            <FunfactArea data={funContent["funfact-section"]} />
             <TestimonialArea data={testimonialContent["testimonial-section"]} />
             <LatestBlogArea
                 data={{
@@ -115,6 +116,11 @@ export const query = graphql`
             title: { eq: "home-fun-facts" }
             pageType: { eq: homepage }
         ) {
+            content {
+                ...PageContentAll
+            }
+        }
+        pages4: page(title: { eq: "home-info" }, pageType: { eq: homepage }) {
             content {
                 ...PageContentAll
             }

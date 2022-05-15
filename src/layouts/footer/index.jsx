@@ -10,11 +10,11 @@ const Footer = ({ data }) => {
     return (
         <Fragment>
             <GamingUpdateArea />
-            <footer>
+            <footer className="footer-bg">
                 <div className="py-16 md:py-24">
                     <div className="container">
                         <div className="grid gap-8 md:gap-6 lg:gap-6 xxl:gap-16 grid-cols-1 sm:grid-cols-12">
-                            <div className="footer_widget_list sm:col-span-6 lg:col-span-4 lg:mr-12">
+                            <div className="text-white footer_widget_list sm:col-span-6 lg:col-span-4 lg:mr-12">
                                 <FooterInfoWidget
                                     infoData={data?.footer?.[0]}
                                 />

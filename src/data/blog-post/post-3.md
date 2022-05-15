@@ -1,5 +1,5 @@
 ---
-title: "PLAYROOM"
+title: "HOW TO START A GAME"
 image: { src: "../../data/images/blog/3.jpg", alt: "SEEN APPLE" }
 date: "2021-01-21"
 author: "Harold Leonard"

@@ -1,5 +1,5 @@
 ---
-title: "GAMERZ HIDEOUT"
+title: "GAMER RULES & GUIDELINES"
 image: { src: "../../data/images/blog/2.jpg", alt: "SEEN APPLE" }
 date: "2020-01-20"
 author: "Harold Leonard"
