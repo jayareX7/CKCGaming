@@ -1,5 +1,5 @@
 ---
-title: "RENTALS"
+title: "INCIDUNT VITAE NEW APPS 2022"
 image: { src: "../../data/images/blog/7.jpg", alt: "SEEN APPLE" }
 date: "2021-04-21"
 author: "Harold Leonard"
