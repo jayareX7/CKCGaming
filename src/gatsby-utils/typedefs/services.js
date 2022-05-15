@@ -1,5 +1,5 @@
 module.exports = `
-    type Players implements Node {
+    type Services implements Node {
         id: ID!
         title: String!
         name: String

@@ -166,7 +166,7 @@ const MatchDetails = ({ data, location, pageContext }) => {
                                         {data?.match.teams && (
                                             <h3 className="font-bold uppercase lg:text-xl">
                                                 {data?.match.teams[0].name}{" "}
-                                                PLAYERS
+                                                SERVICES
                                             </h3>
                                         )}
 
@@ -230,7 +230,7 @@ const MatchDetails = ({ data, location, pageContext }) => {
                                         {data?.match.teams && (
                                             <h3 className="font-bold uppercase lg:text-xl">
                                                 {data?.match.teams[1].name}{" "}
-                                                PLAYERS
+                                                SERVICES
                                             </h3>
                                         )}
 

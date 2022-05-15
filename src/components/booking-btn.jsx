@@ -1,71 +1,72 @@
+import PropTypes from "prop-types";
 import React from "react";
-import Swing from "react-reveal/Swing";
-import Fade from "react-reveal/Fade";
-import { Button, Card, Collapse, Row, Col, Modal } from "reactstrap";
-import { Reveal } from "react-reveal";
+import {
+    Button,
+    Modal,
+    ModalHeader,
+    ModalBody,
+    ModalFooter,
+    Input,
+    Label,
+    Form,
+    FormGroup,
+    Fade,
+} from "reactstrap";
 
-const BookingBtn = () => {
-    const [frameDefaultOpen, setFrameDefaultOpen] = React.useState(false);
+class BookingBtn extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            modal: false,
+        };
 
-    return (
-        <>
-            <Modal
-                isOpen={frameDefaultOpen}
-                className="modal-danger "
-                contentClassName="modal-content_2 bg-gradient-danger"
-                onClick={() => setFrameDefaultOpen(false)}
-            >
-                <div className=" modal-body">
-                    <div className=" py-3 text-center">
-                        <i className=" ni ni-bell-55 ni-3x"></i>
-                        <iframe
-                            src="https://ckckidsatplay.simplybook.me/v2/"
-                            width="880"
-                            height="880"
-                            frameBorder="0"
-                            allowtransparency="true"
-                        ></iframe>
-                    </div>
-                </div>
+        this.toggle = this.toggle.bind(this);
+    }
 
-                <div className=" modal-footer">
-                    <Button
-                        className=" btn-white"
-                        color="default"
-                        type="button"
-                    >
-                        Ok, Got it
-                    </Button>
-                    <Button
-                        className=" text-white ml-auto"
-                        color="link"
-                        onClick={() => setFrameDefaultOpen(false)}
-                        type="button"
-                    >
-                        Close
-                    </Button>
-                </div>
-            </Modal>
+    toggle() {
+        this.setState({
+            modal: !this.state.modal,
+        });
+    }
 
-            <div className="cta-button">
-                <Reveal effect="slideInLeft">
-                    <Button
-                        block
-                        className=" get-started "
-                        color="none"
-                        onClick={() => setFrameDefaultOpen(true)}
-                        type="button"
-                        data-toggle="modal"
-                        data-target="#myModal"
-                    >
-                        <button type="submit" className="btn_three">
-                            Schedule An Appointment
-                        </button>
-                    </Button>
-                </Reveal>
+    render() {
+        return (
+            <div>
+                <Button className="text-white" onClick={this.toggle}>
+                    Book Your Appointment
+                </Button>
+                <Modal
+                    isOpen={this.state.modal}
+                    toggle={this.toggle}
+                    className={this.props.className}
+                >
+                    <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+                    <ModalBody>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </ModalBody>
+                    <ModalFooter>
+                        <Button className="text-primary" onClick={this.toggle}>
+                            Do Something
+                        </Button>
+                        <Button
+                            className="text-secondary"
+                            onClick={this.toggle}
+                        >
+                            Cancel
+                        </Button>
+                    </ModalFooter>
+                </Modal>
             </div>
-        </>
-    );
-};
+        );
+    }
+}
 
 export default BookingBtn;

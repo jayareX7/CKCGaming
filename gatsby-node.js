@@ -38,7 +38,7 @@ exports.createPages = ({ actions, graphql }) => {
     const templates = {
         matchsPosts: path.resolve("src/templates/match-details/index.jsx"),
         gamesPosts: path.resolve("src/templates/games-details/index.jsx"),
-        playersPosts: path.resolve("src/templates/players-details/index.jsx"),
+        servicesPosts: path.resolve("src/templates/players-details/index.jsx"),
         teamsPosts: path.resolve("src/templates/teams-details/index.js"),
         singleArticles: path.resolve(
             "src/templates/single-blog-post/index.jsx"
@@ -59,7 +59,7 @@ exports.createPages = ({ actions, graphql }) => {
                     slug
                 }
             }
-            allPlayers {
+            allServices {
                 nodes {
                     slug
                 }
@@ -114,12 +114,12 @@ exports.createPages = ({ actions, graphql }) => {
             });
         });
 
-        // Players Details Page
-        const playersPosts = res.data.allPlayers.nodes;
-        playersPosts.forEach((node) => {
+        // Services Details Page
+        const servicesPosts = res.data.allServices.nodes;
+        servicesPosts.forEach((node) => {
             createPage({
-                path: `/players/${node.slug}`,
-                component: templates.playersPosts,
+                path: `/services/${node.slug}`,
+                component: templates.servicesPosts,
                 context: {
                     slug: node.slug,
                 },

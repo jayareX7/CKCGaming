@@ -55,6 +55,19 @@ $break-small: 719px;
     }
 }
 
+.service-title {
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #f67240;
+    line-height: 90px;
+    font-family: "Luckiest Guy", cursive;
+    text-shadow: 0 2px black;
+    text-align: center;
+    padding-bottom: 4rem;
+    letter-spacing: 5px;
+}
+
 .testimonial-section {
     border-radius: 2rem;
 }
@@ -294,7 +307,7 @@ body {
 
     .content {
         line-height: 26px;
-        margin: 47px 0 23px;
+        margin: 1px 0 23px;
 
         p {
             margin: 0 0 16px;
