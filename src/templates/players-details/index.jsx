@@ -6,10 +6,10 @@ import PageBreadcrumb from "@components/pagebreadcrumb";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { normalizedData } from "@utils/functions";
-import PlayersDetailsText from "../../container/players/players-list/players-details";
+import ServicesDetailsText from "../../container/players/players-list/players-details";
 import Button from "../../components/shared/button";
 import PlayerCard from "../../components/player-card";
-const PlayersDetails = ({ data, location, pageContext }) => {
+const ServicesDetails = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     return (
         <Layout
@@ -18,11 +18,11 @@ const PlayersDetails = ({ data, location, pageContext }) => {
                 ...globalContent["footer"],
             }}
         >
-            <SEO title="Players Details" pathname="/" />
+            <SEO title="Service Details" pathname="/" />
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="Players Details"
+                title="Service Details"
             />
             <div className="players-post-content-wrapper pt-10">
                 <div className="container">
@@ -31,22 +31,14 @@ const PlayersDetails = ({ data, location, pageContext }) => {
                             <div className="inline-block mb-4 image border-4 border-secondary-90 bg-secondary border-opacity-100 rounded-4xl">
                                 <GatsbyImage
                                     className="rounded-4xl"
-                                    image={getImage(data?.players?.image?.src)}
-                                    alt={data?.players?.image?.alt}
+                                    image={getImage(data?.services?.image?.src)}
+                                    alt={data?.services?.image?.alt}
                                 />
-                            </div>
-                            <div className="players-card-info py-5 xl:py-7 text-center transition-all mt-8 w-full z-10">
-                                <h3 className="uppercase font-bold mb-3">
-                                    {data?.players?.name}
-                                </h3>
-                                <h5 className="level-text">
-                                    {data?.players?.needLavel}
-                                </h5>
                             </div>
 
                             <div className="social-link text-center mt-8 space-x-3">
-                                {data?.players?.socials &&
-                                    data?.players?.socials?.map((item) => (
+                                {data?.services?.socials &&
+                                    data?.services?.socials?.map((item) => (
                                         <li
                                             key={`players-social-${item.id}`}
                                             className="text-center inline-block"
@@ -66,23 +58,20 @@ const PlayersDetails = ({ data, location, pageContext }) => {
 
                         <div className="side__right col-span-1  md:col-span-5 lg:col-span-6">
                             <div className="content">
-                                <h3 className="font-bold mb-5 text-primary uppercase pl-24 relative after:absolute content-after after:bg-primary after:w-16  after:h-1 after:z-0  after:top-1/2  after:left-0  after:transform  after:-translate-y-2/4  after:transition  after:opacity-100">
-                                    PLAYER PROFILE
-                                </h3>
-                                <h2 className="title text-white font-bold uppercase mb-6">
-                                    {data?.players?.title}
+                                <h2 className="service-title text-primary font-bold uppercase mb-6">
+                                    {data?.services?.title}
                                 </h2>
-                                {data?.players?.items &&
-                                    data?.players?.items?.map((item) => (
-                                        <PlayersDetailsText
-                                            key={`players-${item.id}`}
+                                {data?.services?.items &&
+                                    data?.services?.items?.map((item) => (
+                                        <ServicesDetailsText
+                                            key={`services-${item.id}`}
                                             description={item.description}
                                         />
                                     ))}
 
                                 <div className="mt-10">
                                     <Button path="/contact-us" size="lg">
-                                        Contact Now
+                                        Book Your Appointment
                                     </Button>
                                 </div>
                             </div>
@@ -94,14 +83,14 @@ const PlayersDetails = ({ data, location, pageContext }) => {
     );
 };
 
-PlayersDetails.propTypes = {
+ServicesDetails.propTypes = {
     location: PropTypes.object,
     pageContext: PropTypes.object,
     data: PropTypes.shape({
         allGeneral: PropTypes.shape({
             nodes: PropTypes.arrayOf(PropTypes.shape({})),
         }),
-        players: PropTypes.shape({
+        services: PropTypes.shape({
             images: PropTypes.arrayOf(
                 PropTypes.shape({
                     src: PropTypes.oneOfType([
@@ -130,7 +119,7 @@ PlayersDetails.propTypes = {
 };
 
 export const postQuery = graphql`
-    query playersDetailsBySlug($slug: String!) {
+    query servicesDetailsBySlug($slug: String!) {
         allGeneral {
             nodes {
                 section
@@ -152,7 +141,7 @@ export const postQuery = graphql`
                 }
             }
         }
-        players(slug: { eq: $slug }) {
+        services(slug: { eq: $slug }) {
             name
             slug
             title
@@ -179,4 +168,4 @@ export const postQuery = graphql`
         }
     }
 `;
-export default PlayersDetails;
+export default ServicesDetails;

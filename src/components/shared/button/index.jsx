@@ -7,7 +7,7 @@ import btnImagelg from "../../../data/images/others/btn-signup.webp";
 
 const sizeStyle = {
     md: `leading-11 h-12 w-32 sm:h-15 sm:w-40 sm:leading-12`,
-    lg: `text-22base h-73 w-230 leading-73`,
+    lg: `text-white h-73 w-230 leading-73`,
     xl: `h-15 w-50 text-xl leading-3`,
 };
 const shapeStyle = {

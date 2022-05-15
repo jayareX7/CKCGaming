@@ -4,7 +4,7 @@ const generalDefs = require("./general");
 const matchDefs = require("./match");
 const gamesDefs = require("./games");
 const articlesDefs = require("./articles");
-const playersDefs = require("./players");
+const servicesDefs = require("./services");
 
 module.exports = {
     pagesDefs,
@@ -13,5 +13,5 @@ module.exports = {
     matchDefs,
     gamesDefs,
     articlesDefs,
-    playersDefs,
+    servicesDefs,
 };

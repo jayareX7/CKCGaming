@@ -14,7 +14,7 @@ const ContactInfoCard = ({
         <div className="py-15 px-12 relative mt-10">
             <div className="content relative z-10">
                 <GatsbyImage className="mb-28" image={image1} alt={title} />
-                <h3 className="font-bold text-white mb-4">{title}</h3>
+                <h3 className="font-bold text-primary mb-4">{title}</h3>
                 {description && (
                     <p className="text-white text-18base">{description}</p>
                 )}
@@ -23,7 +23,7 @@ const ContactInfoCard = ({
                         <a
                             key={i}
                             href={item.link}
-                            className="block mb-2 last:mb-0 text-18base"
+                            className="block mb-2 last:mb-0 text-white"
                         >
                             {item.title}
                         </a>

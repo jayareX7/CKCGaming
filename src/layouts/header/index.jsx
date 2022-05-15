@@ -55,9 +55,9 @@ const Header = ({ data }) => {
                                 onKeyDown={ofcanvasHandaler}
                                 className="flex flex-col space-y-1.5 ml-8 lg:hidden"
                             >
-                                <span className="line h-0.5 w-6 inline-block menu-bg"></span>
-                                <span className="line h-0.5 w-6 inline-block menu-bg"></span>
-                                <span className="line h-0.5 w-6 inline-block menu-bg"></span>
+                                <span className="line h-0.5 w-6 inline-block bg-white"></span>
+                                <span className="line h-0.5 w-6 inline-block bg-white"></span>
+                                <span className="line h-0.5 w-6 inline-block bg-white"></span>
                             </button>
                             <MobileNavMenu
                                 MobilemenuData={data.menu}

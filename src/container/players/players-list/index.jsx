@@ -1,7 +1,7 @@
 import React from "react";
 import PlayerCard from "../../../components/player-card";
 import PropTypes from "prop-types";
-const PlayersArea = ({ data }) => {
+const ServicesArea = ({ data }) => {
     return (
         <section className="player-section mb-15 md:pb-80">
             <div className="container">
@@ -22,7 +22,7 @@ const PlayersArea = ({ data }) => {
         </section>
     );
 };
-PlayersArea.propTypes = {
+ServicesArea.propTypes = {
     data: PropTypes.shape({
         items: PropTypes.arrayOf(
             PropTypes.shape({
@@ -31,4 +31,4 @@ PlayersArea.propTypes = {
         ),
     }),
 };
-export default PlayersArea;
+export default ServicesArea;

@@ -133,9 +133,9 @@ module.exports = ({ node, actions, createNodeId }) => {
         });
     }
     // Match pages
-    if (node.internal.type === "PlayersJson") {
+    if (node.internal.type === "ServicesJson") {
         createNode({
-            id: createNodeId(`Players-${node.id}`),
+            id: createNodeId(`Services-${node.id}`),
             parent: node.id,
             title: node.title,
             name: node.name,
@@ -146,7 +146,7 @@ module.exports = ({ node, actions, createNodeId }) => {
             items: node.items,
             content: node.content,
             internal: {
-                type: "Players",
+                type: "Services",
                 contentDigest: node.internal.contentDigest,
             },
         });

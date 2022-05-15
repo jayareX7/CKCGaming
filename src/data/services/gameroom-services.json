@@ -1,0 +1,16 @@
+{
+    "id": "players-02",
+    "title": "GAMEROOM SERVICES",
+    "name": "GAMEROOM",
+    "image": {
+        "src": "../../data/images/game-players/player-2.webp",
+        "alt": "Anonymous"
+    },
+
+    "items": [
+        {
+            "id": "players-desction-01",
+            "description": "It is a long established fact that a reader will be distracted readable content page when looking at it layout the point using lorem Ipsum that it has more-or-less normal distribution lette desktop packages and web page now editors."
+        }
+    ]
+}

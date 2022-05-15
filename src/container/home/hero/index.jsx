@@ -16,7 +16,7 @@ const HeroArea = ({ data }) => {
                 alt={"Dashboard"}
             >
                 <div className="container px-4 z-10">
-                    <div className="text-white mt-16">
+                    <div className="text-primary mt-16">
                         {data?.headings?.[0] && (
                             <h1 className="mb-6 sm:mb-10 text-shadow uppercase max-w-3xl">
                                 {data.headings[0].content}

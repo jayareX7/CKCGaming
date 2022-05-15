@@ -7,7 +7,7 @@ import { normalizedData } from "@utils/functions";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import FunfactArea from "../container/home/funfact";
 import AboutUsOurStudioArea from "../container/about-us/about-us-our-studio";
-import PlayersArea from "../container/players/players-list";
+import ServicesArea from "../container/players/players-list";
 
 const MatchPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -29,9 +29,9 @@ const MatchPage = ({ data, location, pageContext }) => {
             />
             <AboutUsOurStudioArea data={content["our-studio-section"]} />
             <FunfactArea data={funContent["funfact-section"]} />
-            <PlayersArea
+            <ServicesArea
                 data={{
-                    items: data.allPlayers.nodes,
+                    items: data.allServices.nodes,
                 }}
             />
         </Layout>
@@ -48,7 +48,7 @@ MatchPage.propTypes = {
         page: PropTypes.shape({
             content: PropTypes.arrayOf(PropTypes.shape({})),
         }),
-        allPlayers: PropTypes.shape({
+        allServices: PropTypes.shape({
             nodes: PropTypes.arrayOf(PropTypes.shape({})),
         }),
     }),
@@ -90,7 +90,7 @@ export const query = graphql`
                 ...PageContentAll
             }
         }
-        allPlayers {
+        allServices {
             nodes {
                 name
                 slug

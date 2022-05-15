@@ -26,9 +26,7 @@ const LandingPage = () => (
 
             <header>
                 <div className={"container"}>
-                    <div className={"cta-button"}>
-                        <BookingBtn />
-                    </div>
+                    <BookingBtn />
                 </div>
             </header>
         </div>
