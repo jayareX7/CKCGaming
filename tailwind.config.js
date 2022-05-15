@@ -20,6 +20,7 @@ module.exports = {
                     100: "#FFFFFF",
                     120: "#F67241",
                     150: "#CB5327",
+                    180: "#13358f",
                 },
                 yollow: {
                     DEFAULT: "#ffa700",
@@ -145,7 +146,7 @@ module.exports = {
                 n1: "-1",
             },
             fontFamily: {
-                metal: ["'Metal Mania', cursive"],
+                metal: ["'Luckiest Guy', cursive"],
                 exo: ["'Exo', sans-serif"],
             },
             container: {

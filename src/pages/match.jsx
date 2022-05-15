@@ -6,7 +6,6 @@ import PageBreadcrumb from "../components/pagebreadcrumb";
 import MatchArea from "../container/all-match/match";
 import { graphql } from "gatsby";
 import { normalizedData } from "@utils/functions";
-import FunfactArea from "../container/home/funfact";
 
 const MatchPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -28,11 +27,6 @@ const MatchPage = ({ data, location, pageContext }) => {
                 data={{
                     items: data?.allMatch?.nodes,
                 }}
-            />
-
-            <FunfactArea
-                className=" -mt-10"
-                data={content["funfact-section"]}
             />
         </Layout>
     );

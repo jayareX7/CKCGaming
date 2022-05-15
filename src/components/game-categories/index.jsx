@@ -26,7 +26,7 @@ const GameCategories = ({ selectItem, categories }) => {
                 id="cats"
                 onBlur={selectItem}
                 onChange={selectItem}
-                className="px-5 h-14 sm:w-64 border-secondary-90 text-white bg-secondary-100 border-2 border-solid rounded-lg focus:outline-none"
+                className="px-5 h-14 sm:w-64 border-secondary-90 text-primary bg-secondary-100 border-2 border-solid rounded-lg focus:outline-none"
             >
                 <option value="all" className="bg-black">
                     All Category

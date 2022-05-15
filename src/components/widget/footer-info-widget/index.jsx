@@ -6,7 +6,7 @@ const FooterInfoWidget = ({ infoData }) => {
     return (
         <Fragment>
             <Logo />
-            <p className="mt-7">{infoData?.text}</p>
+            <p className="mt-7 text-white">{infoData?.text}</p>
             <div className="footer_social flex mt-8">
                 {infoData?.socials?.map((item) => (
                     <a

@@ -1,5 +1,5 @@
 ---
-title: "ADIPISICING ELIT - LOREM IPSUM DOLOR."
+title: "Loyalty Program"
 image: { src: "../../data/images/blog/6.jpg", alt: "SEEN APPLE" }
 date: "2020-02-20"
 author: "Harold Leonard"

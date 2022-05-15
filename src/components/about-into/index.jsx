@@ -11,7 +11,7 @@ const AboutUsInto = ({ aboutusInto }) => {
                 </h3>
             )}
             {aboutusInto?.headings[1] && (
-                <h2 className="text-white font-bold uppercase mb-6">
+                <h2 className="about-section-title font-bold uppercase mb-6">
                     {aboutusInto?.headings[1]?.content}
                 </h2>
             )}
@@ -23,17 +23,6 @@ const AboutUsInto = ({ aboutusInto }) => {
                         </p>
                     ))}
             </div>
-            {aboutusInto?.buttons &&
-                aboutusInto.buttons.map(({ id, content, ...props }) => (
-                    <Button key={id} {...props} className="text-white">
-                        {content}
-                        <StaticImage
-                            className="align-middle ml-3 transition-all group-hover:ml-5"
-                            src="../../data/images/icons/arrrow-icon.webp"
-                            alt=""
-                        />
-                    </Button>
-                ))}
         </div>
     );
 };

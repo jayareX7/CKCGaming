@@ -8,6 +8,7 @@ const FunfactArea = ({ data }) => {
     return (
         <section className="funfact-section">
             <div className="container">
+                <div className="section-title"> OVER..</div>
                 <div className="counterup_inner flex flex-wrap">
                     {data?.items &&
                         data?.items.map((item) => (

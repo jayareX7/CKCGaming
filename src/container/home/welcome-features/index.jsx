@@ -2,35 +2,42 @@ import React from "react";
 import PropTypes from "prop-types";
 import SectionTitle from "../../../components/title";
 import WelcomeFeatures from "../../../components/welcome-features";
+import thumbnailBoard from "../../../../static/images/feature-board.png";
+import thumbnailEvent from "../../../../static/images/feature-event.png";
+import thumbnailStaff from "../../../../static/images/feature-user.png";
+
 const WelcomeFeaturesArea = ({ data }) => {
     return (
-        <section className="pt-16 md:pt-24">
-            <div className="container px-4">
-                {data?.section_title && (
-                    <SectionTitle
-                        heading={data?.section_title.heading}
-                        {...data.section_title}
-                    />
-                )}
-                <div className="flex flex-wrap -mx-3 text-center">
-                    {data?.items &&
-                        data?.items.map((item) => (
-                            <div
-                                key={item.id}
-                                className="w-full md:w-1/2 lg:w-1/3 px-4"
-                            >
-                                <WelcomeFeatures
-                                    title={item.headings[0].content}
-                                    level={item.headings[0].level}
-                                    iconImage={item.images[0].src}
-                                    bgShapImage={item.images[1].src}
-                                    description={item.description}
-                                />
-                            </div>
-                        ))}
+        <>
+            <section className="pt-16 md:pt-24">
+                <div className="container px-4">
+                    {data?.section_title && (
+                        <SectionTitle
+                            heading={data?.section_title.heading}
+                            {...data.section_title}
+                        />
+                    )}
+
+                    <div className="flex flex-wrap -mx-3 text-center">
+                        {data?.items &&
+                            data?.items.map((item) => (
+                                <div
+                                    key={item.id}
+                                    className="w-full md:w-1/2 lg:w-1/3 px-4"
+                                >
+                                    <WelcomeFeatures
+                                        title={item.headings[0].content}
+                                        level={item.headings[0].level}
+                                        iconImage={item.images[0].src}
+                                        bgShapImage={item.images[1].src}
+                                        description={item.description}
+                                    />
+                                </div>
+                            ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 WelcomeFeaturesArea.propTypes = {

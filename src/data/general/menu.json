@@ -10,7 +10,14 @@
         {
             "id": "menu-2",
             "text": "About Us",
-            "link": "/about-us"
+            "link": "/about-ckc",
+            "submenu": [
+                {
+                    "id": "menu-30",
+                    "text": "Loyalty Program",
+                    "link": "/loyalty-program"
+                }
+            ]
         },
         {
             "id": "menu-3",
@@ -18,26 +25,28 @@
             "link": "/gamerz-hideout",
             "submenu": [
                 {
-                    "id": "menu-31",
-                    "text": "Upcoming Matches",
-                    "link": "/match"
-                },
-                {
                     "id": "menu-32",
                     "text": "Games",
                     "link": "/games"
                 },
                 {
-                    "id": "menu-34",
-                    "text": "Badges",
-                    "link": "/players"
+                    "id": "menu-31",
+                    "text": "Upcoming Matches",
+                    "link": "/match"
                 }
             ]
         },
         {
             "id": "menu-50",
             "text": "Playroom",
-            "link": "/playroom"
+            "link": "/playroom",
+            "submenu": [
+                {
+                    "id": "menu-40",
+                    "text": "Rentals",
+                    "link": "/rentals"
+                }
+            ]
         },
         {
             "id": "menu-5",
@@ -48,11 +57,6 @@
                     "id": "menu-33",
                     "text": "FAQ's",
                     "link": "/faq"
-                },
-                {
-                    "id": "menu-5",
-                    "text": "Contact Us",
-                    "link": "/contact-us"
                 }
             ]
         }

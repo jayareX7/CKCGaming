@@ -10,7 +10,7 @@ const SearchBox = ({ searchHelander, searchValueTitle }) => {
                     onChange={searchHelander}
                     type="text"
                     placeholder="Search"
-                    className="px-5 h-14 sm:w-64 border-secondary-90 text-white bg-secondary-100 border-2 border-solid rounded-lg focus:outline-none"
+                    className="px-5 h-14 sm:w-64 border-secondary-90 text-primary bg-secondary-100 border-2 border-solid rounded-lg focus:outline-none"
                 />
                 <button
                     type="submit"

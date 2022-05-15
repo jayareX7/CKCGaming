@@ -48,9 +48,6 @@ const GamesDetails = ({ data, location, pageContext }) => {
                                 </h2>
 
                                 <div className="content-details">
-                                    <ContentText
-                                        data={content["game-details-per-one"]}
-                                    />
                                     <div className="game-all-images my-10">
                                         <Swiper
                                             layout={{
@@ -106,18 +103,7 @@ const GamesDetails = ({ data, location, pageContext }) => {
                                     </div>
 
                                     <ContentText
-                                        data={content["game-details-per-two"]}
-                                    />
-                                    <ContentText
-                                        data={content["game-details-per-three"]}
-                                    />
-
-                                    <ContentText
-                                        data={
-                                            content[
-                                                "game-details-per-whats-new"
-                                            ]
-                                        }
+                                        data={content["game-details-per-one"]}
                                     />
 
                                     {data?.games?.quoteText && (
@@ -127,69 +113,6 @@ const GamesDetails = ({ data, location, pageContext }) => {
                                             </p>
                                         </blockquote>
                                     )}
-
-                                    <div className="additional-information-area bg-secondary-60 px-9 py-9 rounded-2xl mb-9">
-                                        <h3 className="font-bold mb-6">
-                                            Additional Information:
-                                        </h3>
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5">
-                                            <div className="additional_information_text">
-                                                <h4 className="font-bold mb-5">
-                                                    Updated:
-                                                </h4>
-                                                <span>
-                                                    {data?.games?.updated}
-                                                </span>
-                                            </div>
-                                            <div className="additional_information_text">
-                                                <h4 className="font-bold mb-5">
-                                                    SIZE:
-                                                </h4>
-                                                <span>{data?.games?.size}</span>
-                                            </div>
-                                            <div className="additional_information_text">
-                                                <h4 className="font-bold mb-5">
-                                                    INSTALLS:
-                                                </h4>
-                                                <span>
-                                                    {data?.games?.installs}
-                                                </span>
-                                            </div>
-                                            <div className="additional_information_text">
-                                                <h4 className="font-bold mb-5">
-                                                    CURRENT VERSION:
-                                                </h4>
-                                                <span>
-                                                    {
-                                                        data?.games
-                                                            ?.currentVersion
-                                                    }
-                                                </span>
-                                            </div>
-                                            <div className="additional_information_text">
-                                                <h4 className="font-bold mb-5">
-                                                    IN-APP PRODUCTS:
-                                                </h4>
-                                                <span>
-                                                    {data?.games?.inAppProducts}
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <ContentText
-                                        data={content["game-details-per-04"]}
-                                    />
-                                </div>
-
-                                <div className="mt-14 text-white">
-                                    <div className="mb-4">
-                                        <h3 className="font-bold">Comments</h3>
-                                    </div>
-                                    <DiscussionEmbed
-                                        shortname={disqusShorttname}
-                                        config={disquscConfig}
-                                    />
                                 </div>
                             </div>
                         </div>

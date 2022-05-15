@@ -1,10 +1,10 @@
 {
-    "id": "players-01",
-    "title": "SPACE GAME EXPERT 2",
-    "name": "THUNDERMAN",
+    "id": "players-03",
+    "title": "RENTAL SERVICES",
+    "name": "RENTALS",
     "needLavel": "36 LEVEL COMPLETED",
     "image": {
-        "src": "../../data/images/game-players/player-1.webp",
+        "src": "../../data/images/game-players/player-3.webp",
         "alt": "Anonymous"
     },
     "socials": [
@@ -40,7 +40,7 @@
         },
         {
             "id": "players-desction-02",
-            "description": "It's long established fact that a reader will be distracted readable content page when looking at it layout the point using lorem Ipsum that it has more-or-less normal distribution lette desktop packages and web page now editors."
+            "description": "It is a long established fact that a reader will be distracted readable content page when looking at it layout the point using lorem Ipsum that it has more-or-less normal distribution lette desktop packages and web page now editors."
         }
     ]
 }
