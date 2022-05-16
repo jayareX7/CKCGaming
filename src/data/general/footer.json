@@ -1,36 +1,36 @@
 {
-    "id": "footer-data",
-    "section": "footer",
-    "footer": [
+  "id": "footer-data",
+  "section": "footer",
+  "footer": [
+    {
+      "id": "footer-1",
+      "text": "It long estabhed fact that reader will ditracted the readable content looking using readable.",
+      "socials": [
         {
-            "id": "footer-1",
-            "text": "It long estabhed fact that reader will ditracted the readable content looking using readable.",
-            "socials": [
-                {
-                    "id": 1,
-                    "icon": "icofont-facebook",
-                    "link": "https://www.facebook.com",
-                    "title": "facebook"
-                },
-                {
-                    "id": 2,
-                    "icon": "icofont-dribbble",
-                    "link": "https://dribbble.com",
-                    "title": "dribbble"
-                },
-                {
-                    "id": 3,
-                    "icon": "icofont-youtube-play",
-                    "link": "https://www.youtube.com",
-                    "title": "youtube"
-                },
-                {
-                    "id": 4,
-                    "icon": "icofont-twitter",
-                    "link": "https://www.twitter.com",
-                    "title": "twitter"
-                }
-            ]
+          "id": 1,
+          "icon": "icofont-facebook",
+          "link": "https://www.facebook.com/ckckidsatplay",
+          "title": "facebook"
+        },
+        {
+          "id": 2,
+          "icon": "icofont-dribbble",
+          "link": "https://dribbble.com",
+          "title": "dribbble"
+        },
+        {
+          "id": 3,
+          "icon": "icofont-youtube-play",
+          "link": "https://www.youtube.com",
+          "title": "youtube"
+        },
+        {
+          "id": 4,
+          "icon": "icofont-twitter",
+          "link": "https://www.twitter.com",
+          "title": "twitter"
         }
-    ]
+      ]
+    }
+  ]
 }
