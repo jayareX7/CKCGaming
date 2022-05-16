@@ -1,106 +1,100 @@
 {
-  "title": "contactUsPage",
-  "pageType": "innerpage",
-  "content": [
-    {
-      "id": "contact-us-info-section",
-      "section": "contact-us-info-section",
-      "items": [
+    "title": "contactUsPage",
+    "pageType": "innerpage",
+    "content": [
         {
-          "id": "contact-us-info-1",
-          "headings": [
-            {
-              "level": "h3",
-              "content": "EMAIL:"
-            }
-          ],
-          "images": [
-            {
-              "src": "../../data/images/icons/email.webp",
-              "alt": "LIVE STREAMING"
-            },
-            {
-              "src": "../../data/images/features/gaming-world-bg2.webp",
-              "alt": "LIVE STREAMING"
-            }
-          ],
-          "action_link": [
-            {
-              "title": "gamestudio@gmail.com",
-              "link": "mailto:gamestudio@gmail.com"
-            }
-          ],
-          "countNumber": "678-548-7777",
-          "name": "CKC KIDS AT PLAY",
-          "designation": "3382 HWY 5 DOUGLASVILLE GA 30135 SUITE D"
+            "id": "contact-us-info-section",
+            "section": "contact-us-info-section",
+            "items": [
+                {
+                    "id": "contact-us-info-1",
+                    "headings": [
+                        {
+                            "level": "h3",
+                            "content": "EMAIL:"
+                        }
+                    ],
+                    "images": [
+                        {
+                            "src": "../../data/images/icons/email.webp",
+                            "alt": "LIVE STREAMING"
+                        },
+                        {
+                            "src": "../../data/images/features/gaming-world-bg2.webp",
+                            "alt": "LIVE STREAMING"
+                        }
+                    ],
+                    "action_link": [
+                        {
+                            "title": "ckckidsatplay@gmail.com",
+                            "link": "mailto:ckckidsatplay@gmail.com"
+                        }
+                    ]
+                },
+                {
+                    "id": "contact-us-info-2",
+                    "headings": [
+                        {
+                            "level": "h3",
+                            "content": "LOCATION:"
+                        }
+                    ],
+                    "images": [
+                        {
+                            "src": "../../data/images/icons/location.webp",
+                            "alt": "GAME NEWS"
+                        },
+                        {
+                            "src": "../../data/images/features/gaming-world-bg2.webp",
+                            "alt": "LIVE STREAMING"
+                        }
+                    ],
+                    "description": "3382 HWY 5 DOUGLASVILLE GA 30135 SUITE D"
+                },
+                {
+                    "id": "contact-us-info-3",
+                    "headings": [
+                        {
+                            "level": "h3",
+                            "content": "PHONE:"
+                        }
+                    ],
+                    "images": [
+                        {
+                            "src": "../../data/images/icons/phone.webp",
+                            "alt": "PHONE"
+                        },
+                        {
+                            "src": "../../data/images/features/gaming-world-bg2.webp",
+                            "alt": "LIVE STREAMING"
+                        }
+                    ],
+                    "action_link": [
+                        {
+                            "title": "(678) 548-7777",
+                            "link": "tel:(678) 548-7777"
+                        }
+                    ]
+                }
+            ]
         },
         {
-          "id": "contact-us-info-2",
-          "headings": [
-            {
-              "level": "h3",
-              "content": "LOCATION:"
-            }
-          ],
-          "images": [
-            {
-              "src": "../../data/images/icons/location.webp",
-              "alt": "GAME NEWS"
+            "id": "contact-us-form-section",
+            "section": "contact-us-form-section",
+            "section_title": {
+                "showDescription": true,
+                "align": "center",
+                "heading": "GET IN TOUCH",
+                "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
             },
-            {
-              "src": "../../data/images/features/gaming-world-bg2.webp",
-              "alt": "LIVE STREAMING"
-            }
-          ],
-          "description": "",
-          "countNumber": "678-548-7777"
-        },
-        {
-          "id": "contact-us-info-3",
-          "headings": [
-            {
-              "level": "h3",
-              "content": "PHONE:"
-            }
-          ],
-          "images": [
-            {
-              "src": "../../data/images/icons/phone.webp",
-              "alt": "PHONE"
-            },
-            {
-              "src": "../../data/images/features/gaming-world-bg2.webp",
-              "alt": "LIVE STREAMING"
-            }
-          ],
-          "action_link": [
-            {
-              "title": "",
-              "link": ""
-            }
-          ],
-          "countNumber": "",
-          "description": "678-548-7777"
+            "buttons": [
+                {
+                    "id": 1,
+                    "size": "lg",
+                    "path": "/",
+                    "content": "SUBMIT NOW "
+                }
+            ]
         }
-      ]
-    },
-    {
-      "id": "contact-us-form-section",
-      "section": "contact-us-form-section",
-      "section_title": {
-        "showDescription": true,
-        "align": "center",
-        "heading": "GET IN TOUCH",
-        "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
-      },
-      "buttons": [
-        {
-          "id": 1,
-          "size": "lg",
-          "path": "/",
-          "content": "SUBMIT NOW "
-        }
-      ]
-    }
-  ]
+    ]
 }
