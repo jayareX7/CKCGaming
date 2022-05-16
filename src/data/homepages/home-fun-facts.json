@@ -6,43 +6,7 @@
       "id": "home-funfact-section",
       "section": "funfact-section",
       "items": [
-        {
-          "id": "funfact-01",
-          "countNumber": 48,
-          "headings": [
 
-          ]
-        },
-        {
-          "id": "funfact-02",
-          "countNumber": 106,
-          "headings": [
-            {
-              "level": "h3",
-              "content": "VARIOUS GAME TITLES"
-            }
-          ]
-        },
-        {
-          "id": "funfact-03",
-          "countNumber": 2,
-          "headings": [
-            {
-              "level": "h3",
-              "content": "KID-FRIENDLY PLAY AREAS"
-            }
-          ]
-        },
-        {
-          "id": "funfact-04",
-          "countNumber": 500,
-          "headings": [
-            {
-              "level": "h3",
-              "content": "SMILES MADE"
-            }
-          ]
-        }
       ]
     }
   ]
