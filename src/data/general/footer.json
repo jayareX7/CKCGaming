@@ -23,12 +23,6 @@
           "icon": "icofont-youtube-play",
           "link": "https://www.youtube.com",
           "title": "youtube"
-        },
-        {
-          "id": 4,
-          "icon": "icofont-twitter",
-          "link": "https://www.twitter.com",
-          "title": "twitter"
         }
       ]
     }
