@@ -1,29 +1,29 @@
 {
-    "title": "home",
-    "pageType": "homepage",
-    "content": [
+  "title": "home",
+  "pageType": "homepage",
+  "content": [
+    {
+      "id": "hero-section-content",
+      "section": "hero-section",
+      "headings": [
         {
-            "id": "hero-section-content",
-            "section": "hero-section",
-            "headings": [
-                {
-                    "level": "h1",
-                    "content": "Come In Today"
-                }
-            ],
-            "texts": [
-                {
-                    "content": "Simply text of the printing and typesetting industry."
-                }
-            ],
-            "buttons": [
-                {
-                    "id": 1,
-                    "size": "lg",
-                    "path": "/contact-us",
-                    "content": "Play Now"
-                }
-            ]
+          "level": "h1",
+          "content": "Come hang out "
         }
-    ]
+      ],
+      "texts": [
+        {
+          "content": "Simply text of the printing and typesetting industry."
+        }
+      ],
+      "buttons": [
+        {
+          "id": 1,
+          "size": "lg",
+          "path": "/contact-us",
+          "content": "Play Now"
+        }
+      ]
+    }
+  ]
 }
