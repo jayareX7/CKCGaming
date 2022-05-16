@@ -13,15 +13,15 @@
       },
       "items": [
         {
-          "id": "Testimonial",
+          "id": "",
           "images": [
             {
               "src": "../../data/images/testimonial/testimonial-thumb.webp",
               "alt": "Panda"
             }
           ],
-          "name": "Randolph Frazier",
-          "designation": "Top Rated Gamer",
+          "name": "",
+          "designation": "",
           "description": ""
         },
         {
