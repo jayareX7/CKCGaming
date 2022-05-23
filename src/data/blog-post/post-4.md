@@ -1,5 +1,5 @@
 ---
-title: Tiny Tot Playground
+title: Giving Back
 image:
   src: "../../data/images/blog/4.jpg"
   alt: SEEN APPLE
