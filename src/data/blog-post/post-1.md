@@ -1,16 +1,16 @@
 ---
-title: "Gamerz Hideout"
-image: { src: "../../data/images/blog/1.jpg", alt: "SEEN APPLE" }
-date: "2020-01-20"
-quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
+title: Gamerz Hideout
+image:
+  src: "../../data/images/blog/1.jpg"
+  alt: SEEN APPLE
+date: 2020-01-20
+quote_text: The use of apps in investment ideas is a great way to enjoy the convenience.
 categories:
-    - Legendary
-    - Animation Game
-tags:
-    - Action
-    - Streamers
----
+- Legendary
+- Animation Game
+tags: []
 
+---
 ### MAKE YOUR STORE STAND OUT FROM THE OTHERS BY CONVERTING MORE SHOPPERS INTO BUYERS!
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry has been industry standard dummy text ever since the a galley of type and scrambe make type specimen book has survived not only five centuries text of the printing and typesetin indust standard dummy text ever since the 1500s, when an unknown printer.
