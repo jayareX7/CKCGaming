@@ -1,5 +1,5 @@
 ---
-title: PLAY ROOM
+title: CkC Gives Back
 image:
   src: "../../data/images/blog/1.jpg"
   alt: SEEN APPLE
