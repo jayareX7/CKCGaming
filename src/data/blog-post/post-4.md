@@ -1,5 +1,5 @@
 ---
-title: Giving Back
+title: Playroom
 image:
   src: "../../data/images/blog/4.jpg"
   alt: SEEN APPLE
